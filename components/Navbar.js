@@ -54,10 +54,10 @@ const Navbar = () => {
       <nav className={`nav`}>
         <Link href={"/"} className="Logo-container">
           <Image
-            src="/images/ctm-logo.png"
-            alt="CTM Cargo Logo"
+            src="/images/trexx-adv-logo.png"
+            alt="Trexx Adventures Logo"
             width={143}
-            height={36}
+            height={59}
             className="logo"
             priority
           />
