@@ -104,7 +104,7 @@ export default function Home() {
           <h2>Adventure Tours</h2>
           <p>
             <strong>Forge Bonds on the Open Road:</strong> Embark on an epic
-            journey along Spain&apos;s famous 'Vías Verdes' (Greenways). These
+            journey along Spain&apos;s famous "Vías Verdes" (Greenways). These
             historic railway routes offer a shared challenge, building
             camaraderie as you pedal through stunning remote landscapes. This
             full or multi-day adventure forges deep team bonds.
