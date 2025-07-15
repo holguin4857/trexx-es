@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
-import Image from "next/image";
+
 import hero from "../styles/hero.module.css";
 import features from "../styles/features.module.css";
 import testimonials from "../styles/testimonials.module.css";
@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Cargo Transportation Management</title>
+        <title>trexx adventure tours</title>
         <meta name="description" content="the easy way to ship" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
@@ -21,254 +21,229 @@ export default function Home() {
 
       <div className={hero.container}>
         <div className={hero.content}>
-          <h1>cross-border logistics, simplified</h1>
+          <h1>Your team&apos;s next adventure</h1>
 
           <p>
-            Your trusted partner for seamless US-Mexico trade in the
-            Arizona-Sonora corridor.
+            At trexx, we offer three distinct e-bike experiences, each
+            meticulously designed to foster teamwork, create lasting memories,
+            and reward your efforts with world-class culinary excellence.
+            Whether you crave cultural discovery, mountain thrills, or an epic
+            journey, we have the perfect tour for your team.
           </p>
-          <button className={hero.button}>
-            <Link href="book">Get started</Link>
-          </button>
-          <button className={hero.button1}>
-            <Link href="contact">Talk to an expert</Link>
-          </button>
+          <Link href="book" className={buttons.button}>
+            Get started
+          </Link>
+          <Link href="contact" className={buttons.button1}>
+            Talk to an expert
+          </Link>
         </div>
       </div>
 
       <section className={services.columns}>
         <article className={services.column}>
-         
-          <h2>Road Freight</h2>
+          <h2>Valencia City Tours</h2>
           <p>
-            Ship your cargo confidently across the Arizona-Sonora corridor and
-            beyond. Efficient, reliable, and tailored ground transport for all
-            your goods.
+            <strong>Unlock the Soul of the City:</strong> Discover
+            Valencia&apos;s soul on a guided bike tour through 2,000 years of
+            history. Glide from the futuristic City of Arts and Sciences to the
+            historic Old Town, exploring the Turia Gardens and vibrant Central
+            Market. This sophisticated journey is perfect for teams to connect
+            with the city&apos;s culture in a fun and relaxed way.
           </p>
-           <Image
-            src="/images/truck.png"
-            alt="Flatrack"
-            width={200}
-            height={200}
-          />
+          <ul className={services.tourFeatures}>
+            <li>
+              <strong>Best For:</strong> All fitness levels, cultural
+              enthusiasts, and teams seeking a sophisticated urban experience.
+            </li>
+            <li>
+              <strong>Key Sights:</strong> City of Arts & Sciences, El Carmen,
+              Central Market, Turia Gardens.
+            </li>
+            <li>
+              <strong>The Reward:</strong> A unique, private dining experience
+              with cuisine inspired by Michelin-starred kitchens, curated by our
+              expert chef partner.
+            </li>
+          </ul>
+          <Link href="services" className={buttons.readMore}>
+            Find your city tours
+          </Link>
         </article>
+
         <article className={services.column}>
-         
-          <h2>Sea Freight</h2>
+          <h2>MTB Sierra Calderona</h2>
           <p>
-            Optimize your international shipments with our flexible ocean
-            solutions. Full Container Load (FCL) or Less than Container Load
-            (LCL) for cost-effective global reach.
+            <strong>Ride Above the Ordinary:</strong> Escape to the Sierra
+            Calderona&apos;s rugged trails just outside Valencia. On our guided
+            e-MTB tour, your team will conquer scenic climbs and enjoy thrilling
+            descents tailored to all skill levels. Experience breathtaking
+            panoramic views of the mountains, rewarded by a spectacular
+            culinary experience.
           </p>
-           <Image
-            src="/images/ship.png"
-            alt="Ship"
-            width={200}
-            height={200}
-          />
+          <ul className={services.tourFeatures}>
+            <li>
+              <strong>Best For:</strong> Teams seeking adventure, stunning
+              nature, and a true sense of accomplishment.
+            </li>
+            <li>
+              <strong>Key Sights:</strong> Garbí viewpoint, Serra Castle,
+              natural springs, and panoramic vistas.
+            </li>
+            <li>
+              <strong>The Reward:</strong> An unforgettable meal of world-class
+              quality, prepared exclusively for your team by our expert chef
+              partner.
+            </li>
+          </ul>
+          <Link href="services" className={buttons.readMore}>
+            Find your mountain tours
+          </Link>
         </article>
+
         <article className={services.column}>
-        
-          <h2>Air Freight</h2>
+          <h2>Adventure Tours</h2>
           <p>
-            For urgent or time-sensitive cargo, choose our expedited air
-            services. Fast, secure, and dependable transport to meet your tight
-            deadlines, worldwide.
+            <strong>Forge Bonds on the Open Road:</strong> Embark on an epic
+            journey along Spain&apos;s famous 'Vías Verdes' (Greenways). These
+            historic railway routes offer a shared challenge, building
+            camaraderie as you pedal through stunning remote landscapes. This
+            full or multi-day adventure forges deep team bonds.
           </p>
-            <Image
-            src="/images/plane.png"
-            alt="plane"
-            width={200}
-            height={200}
-          />
+          <ul className={services.tourFeatures}>
+            <li>
+              <strong>Best For:</strong> Teams looking for a unique, challenging
+              objective and the ultimate bonding experience.
+            </li>
+            <li>
+              <strong>Key Sights:</strong> The Ojos Negros Vía Verde, historic
+              railway tunnels, viaducts, and changing landscapes.
+            </li>
+            <li>
+              <strong>The Reward:</strong> A remarkable culinary celebration of
+              your team&apos;s incredible achievement.
+            </li>
+          </ul>
+          <Link href="services" className={buttons.readMore}>
+            Find your adventure tours
+          </Link>
         </article>
       </section>
 
       <div className={features.container}>
         <div className={features.content}>
-          <h2>Trust Your Shipments to the Experts</h2>
+          <h2>Ride. Bond. Indulge.</h2>
           <p>
-            We connect exporters from around the world with the US market, with
-            an unmatched specialization in the Mexico-US corridor, ensuring your
-            goods move smoothly, reliably, and without hassle across the border.
-            Partner with us for trusted logistics solutions that drive your
-            success.
+            Forge stronger connections on our guided e-bike adventures through
+            Valencia&apos;s stunning landscapes, crowned with a world-class culinary finale.
           </p>
         </div>
       </div>
 
       <div className={milestones.cards}>
         <div className={milestones.card}>
-          <h3>9000+</h3>
-          <p>Crates Shipped by Air and Road</p>
+          <h3>907m+</h3>
+          <p>Metres of Panoramic Views</p>
         </div>
         <div className={milestones.card}>
-          <h3>600+</h3>
-          <p>Full containers shipped by sea</p>
+          <h3>1</h3>
+          <p>Private Chef Experience</p>
         </div>
         <div className={milestones.card}>
-          <h3>35000+</h3>
-          <p>Happy Clients</p>
+          <h3>200km+</h3>
+          <p>Of Epic Trails to Explore</p>
         </div>
       </div>
 
       <div className={why.container}>
         <div className={why.content}>
-          <h2>Why choose CTM?</h2>
-
-          <ul>
-            <li>
-              <strong>Integrated US & Mexico Expertise:</strong> With our Tucson
-              office, we provide a cohesive and streamlined logistics solution
-              that truly understands both sides of the border.
-            </li>
-            <li>
-              <strong>FTZ 60 Specialization:</strong> Unlock significant cost
-              savings and operational efficiencies. We possess knowledge and
-              experience in managing cargo flow in and out of Foreign Trade Zone
-              60, ensuring compliance and maximizing your benefits
-            </li>
-            <li>
-              <strong>Comprehensive Service:</strong> We manage the entire
-              shipping process, from collection and loading to customs clearance
-              and delivery, taking the complexity out of international
-              transport.
-            </li>
-            <li>
-              <strong>Arizona-Sonora Corridor Focus:</strong> We are your
-              dedicated experts for this vital trade artery. Our local insights,
-              network, and direct experience mean faster transit, fewer delays,
-              and more reliable service for your shipments between Sonora and
-              Arizona.
-            </li>
-            <li>
-              <strong>End-to-End Solutions:</strong> From customs brokerage
-              coordination to efficient transportation and warehousing, we
-              manage every detail of your supply chain, allowing you to focus on
-              your core business.
-            </li>
-            <li>
-              <strong>Reliability & Transparency: </strong> Your cargo&apos;s
-              journey is our priority. We commit to clear communication, precise
-              execution, and dependable service every step of the way.
-            </li>
-          </ul>
-
-          <button className={hero.button1}>
-            <Link href="contact">Talk to an expert</Link>
-          </button>
+          <h2>Why choose trexx?</h2>
+          <p>
+            At trexx, we believe the strongest team bonds are forged through
+            shared challenges and exceptional rewards. We don&apos;t just offer
+            e-bike tours; we design immersive adventures that unite your team
+            and create lasting memories. Here&apos;s why a trexx experience is
+            unlike any other:
+          </p>
         </div>
       </div>
 
-      <div className={testimonials.container1}>
+      <div className={testimonials.container2}>
         <div className={testimonials.content}>
           <p>
-            CTM has been a game changer for our cross border shipments. Their
-            road freight service from Sonora to Arizona is incredibly reliable.
-            We never worry about customs or delays, and their team is always
-            responsive. Highly recommend them for seamless border operations.
-            <br />
-            <br /> Maria Sanchez, Export Manager.
+            <strong>1. An Unforgettable Gastronomic Finale:</strong> Anyone can
+            offer a bike ride. We offer a culinary event. The pinnacle of every
+            Trexx tour is a spectacular meal designed by our exclusive partner,
+            Chef Oliver Sharpe. With a background forged in the acclaimed
+            kitchens of Michelin-starred chefs like Jean Luis Neichel and Jean
+            Luc Figueras, he brings a world-class, fine-dining experience to the
+            most stunning locations. It&apos;s an authentic and exclusive reward
+            that elevates a great day into a legendary one.
           </p>
         </div>
       </div>
       <div className={testimonials.container2}>
         <div className={testimonials.content}>
           <p>
-            For our urgent parts that need to cross continents, CTMs air freight
-            service is our first call. They handle everything with speed and
-            precision, ensuring our operations never miss a beat. Its peace of
-            mind when deadlines are tight. <br />
-            <br /> David Chen, Operations
-          </p>
-        </div>
-      </div>
-      <div className={testimonials.container1}>
-        <div className={testimonials.content}>
-          <p>
-            Trabajar con CTM es siempre una experiencia fluida. Su equipo es
-            profesional y siempre logran que nuestros productos lleguen a
-            destino a tiempo y sin complicaciones. Son un socio verdaderamente
-            confiable para nuestras necesidades de logistica. <br />
-            <br /> Ricardo Lopez, Gerente de Logistica
+            <strong>2. Shared Adventure, No One Left Behind:</strong> Our
+            state-of-the-art e-bikes are the ultimate equalisers. They empower
+            every member of your team, regardless of their fitness level or
+            cycling experience, to conquer scenic climbs and enjoy the journey
+            together. The focus is on the shared experience—the views, the
+            laughter, and the sense of accomplishment—ensuring no one gets left
+            behind.
           </p>
         </div>
       </div>
       <div className={testimonials.container2}>
         <div className={testimonials.content}>
           <p>
-            As a Mexican exporter, having a team like CTM in Tucson that is
-            fully bilingual and understands both sides of the border has made
-            all the difference. Their clear communication and expertise are
-            invaluable for our trade.
-            <br />
-            <br />
-            Carlos Ramirez, Director de Compras
-          </p>
-        </div>
-      </div>
-      <div className={testimonials.container1}>
-        <div className={testimonials.content}>
-          <p>
-            CTM has consistently provided exceptional service for our
-            warehousing and distribution needs. Their team is proactive and
-            always goes the extra mile to ensure our cargo is handled with care
-            and efficiency. They are a true asset. <br />
-            <br />
-            Emily White, Supply Chain Manager
+            <strong>3. True Local Expertise:</strong> Our roots are in Valencia.
+            We guide you through our backyard, from the hidden, rugged trails of
+            the Sierra Calderona to the secret historical gems within the city.
+            We don&apos;t follow generic routes; we curate authentic adventures
+            that reveal the true soul of the region, sharing stories and
+            viewpoints that only a local would know
           </p>
         </div>
       </div>
       <div className={testimonials.container2}>
         <div className={testimonials.content}>
           <p>
-            Hemos resuelto varios desafios logisticos complejos gracias a CTM.
-            Su capacidad para encontrar soluciones efectivas y su compromiso con
-            la entrega son impresionantes. Los consideramos una extension vital
-            de nuestro equipo. <br />
-            <br />
-            Javier Soto, CEO
-          </p>
-        </div>
-      </div>
-      <div className={testimonials.container1}>
-        <div className={testimonials.content}>
-          <p>
-            CTM container shipping service is very good. They provided a secure
-            and cost-effective solution for my business, ensuring my cargo
-            arrived safely and on time. Highly recommended for all your
-            container shipping needs! <br />
-            <br />
-            Helena Rosa Menendez
+            <strong>4. Seamless, All-Inclusive Service:</strong> Your
+            team&apos;s only focus should be the adventure. We handle every
+            single detail with precision and care. From door-to-door transport
+            in premium vehicles to perfectly maintained e-bikes and safety gear,
+            your experience is completely seamless. We provide everything, so
+            you can simply show up and ride.
           </p>
         </div>
       </div>
       <div className={testimonials.container2}>
         <div className={testimonials.content}>
           <p>
-            Gracias a CTM, logramos superar un desafio logistico muy complejo
-            con nuestra carga especial. Su equipo fue increiblemente proactivo y
-            encontro la solucion perfecta. Su experiencia en el cruce fronterizo
-            es inigualable. <br />
-            <br />
-            Miguel Fuentes, Director de Operaciones
+            <strong>5. Designed to Forge Bonds:</strong> Our tours are more than
+            just a route on a map; they are team-building expeditions. The
+            shared challenge of a mountain ascent or the collective discovery of
+            a new city path is intentionally designed to spark communication,
+            build trust, and foster a powerful sense of camaraderie that extends
+            far beyond the trail.
           </p>
         </div>
       </div>
 
       <div className={features.container}>
         <div className={features.content}>
-          <h2>shipping with confidence</h2>
+          <h2>Ready to Build Your Perfect Team Adventure?</h2>
           <p>
-            CTM Cargo Transportation Management LLC offers a complete suite of
-            logistics and freight forwarding services, ensuring seamless
-            movement of your goods, whether across the border or around the
-            globe. We provide tailored solutions backed by extensive experience
-            and a commitment to efficiency and reliability.
+            Every great team has a story. Let us help you write the next
+            chapter. We will work directly with you to tailor the perfect blend
+            of adventure and culinary excellence for your group&apos;s specific
+            goals and size. Planning is simple, and the experience is
+            unforgettable.
           </p>
-          <button className={buttons.button}>
-            <Link href="book">Book now</Link>
-          </button>
+          <Link href="book" className={buttons.button}>
+            Book now
+          </Link>
         </div>
       </div>
     </>

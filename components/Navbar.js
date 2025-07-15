@@ -54,10 +54,10 @@ const Navbar = () => {
       <nav className={`nav`}>
         <Link href={"/"} className="Logo-container">
           <Image
-            src="/images/trexx-adv-logo.png"
+            src="/images/trexx-logo.png"
             alt="Trexx Adventures Logo"
-            width={143}
-            height={59}
+            width={107}
+            height={29}
             className="logo"
             priority
           />

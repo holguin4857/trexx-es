@@ -47,6 +47,24 @@
   margin: 8px 0 0 0; /* Creates space: 8px between H2 text and line, auto for horizontal centering, 0 below */
 }
 
+.tourFeatures {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 1.5em;
+    text-align: left;
+}
+
+.tourFeatures li {
+    margin-bottom: 0.8em;
+    padding-left: 5px;
+    font-size: 0.9em;
+    color: #4A4A4A;
+}
+
+.tourFeatures li strong {
+    color: #1a1a1a;
+}
+
 /*3 column content responsive*/
 
 @media screen and (max-width: 980px) {
