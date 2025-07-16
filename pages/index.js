@@ -57,7 +57,7 @@ export default function Home() {
             </li>
             <li>
               <strong>Key Sights:</strong> City of Arts & Sciences, El Carmen,
-              Central Market, Turia Gardens.
+              Central Market, Turia Gardens, La marina de Valencia.
             </li>
             <li>
               <strong>The Reward:</strong> A unique, private dining experience
@@ -100,33 +100,7 @@ export default function Home() {
           </Link>
         </article>
 
-        <article className={services.column}>
-          <h2>Adventure Tours</h2>
-          <p>
-            <strong>Forge Bonds on the Open Road:</strong> Embark on an epic
-            journey along Spain&apos;s famous Vías Verdes (Greenways). These
-            historic railway routes offer a shared challenge, building
-            camaraderie as you pedal through stunning remote landscapes. This
-            full or multi-day adventure forges deep team bonds.
-          </p>
-          <ul className={services.tourFeatures}>
-            <li>
-              <strong>Best For:</strong> Teams looking for a unique, challenging
-              objective and the ultimate bonding experience.
-            </li>
-            <li>
-              <strong>Key Sights:</strong> The Ojos Negros Vía Verde, historic
-              railway tunnels, viaducts, and changing landscapes.
-            </li>
-            <li>
-              <strong>The Reward:</strong> A remarkable culinary celebration of
-              your team&apos;s incredible achievement.
-            </li>
-          </ul>
-          <Link href="services" className={buttons.readMore}>
-            Find your adventure tours
-          </Link>
-        </article>
+       
       </section>
 
       <div className={features.container}>
