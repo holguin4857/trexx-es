@@ -10,8 +10,8 @@ export default function Book() {
   return (
     <>
       <Head>
-        <title>CTM Book</title>
-        <meta name="description" content="the easy way to ship" />
+        <title>Book</title>
+        <meta name="description" content="trexx adventure tours" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>

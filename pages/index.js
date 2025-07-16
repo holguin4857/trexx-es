@@ -14,7 +14,7 @@ export default function Home() {
     <>
       <Head>
         <title>trexx adventure tours</title>
-        <meta name="description" content="the easy way to ship" />
+        <meta name="description" content="trexx adventure tours" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -24,11 +24,11 @@ export default function Home() {
           <h1>Your team&apos;s next adventure</h1>
 
           <p>
-            At trexx, we offer three distinct e-bike experiences, each
-            meticulously designed to foster teamwork, create lasting memories,
-            and reward your efforts with world-class culinary excellence.
-            Whether you crave cultural discovery, mountain thrills, or an epic
-            journey, we have the perfect tour for your team.
+            At trexx, we offer two distinct bike experiences, meticulously
+            designed to foster teamwork, create lasting memories, and reward
+            your efforts with world-class culinary excellence. Whether you crave
+            cultural discovery or mountain thrills, we have the perfect tour for
+            your team.
           </p>
           <Link href="book" className={buttons.button}>
             Get started
@@ -77,8 +77,8 @@ export default function Home() {
             Calderona&apos;s rugged trails just outside Valencia. On our guided
             e-MTB tour, your team will conquer scenic climbs and enjoy thrilling
             descents tailored to all skill levels. Experience breathtaking
-            panoramic views of the mountains, rewarded by a spectacular
-            culinary experience.
+            panoramic views of the mountains, rewarded by a spectacular culinary
+            experience.
           </p>
           <ul className={services.tourFeatures}>
             <li>
@@ -99,8 +99,6 @@ export default function Home() {
             Find your mountain tours
           </Link>
         </article>
-
-       
       </section>
 
       <div className={features.container}>
@@ -108,7 +106,8 @@ export default function Home() {
           <h2>Ride. Bond. Indulge.</h2>
           <p>
             Forge stronger connections on our guided e-bike adventures through
-            Valencia&apos;s stunning landscapes, crowned with a world-class culinary finale.
+            Valencia&apos;s stunning landscapes, crowned with a world-class
+            culinary finale.
           </p>
         </div>
       </div>

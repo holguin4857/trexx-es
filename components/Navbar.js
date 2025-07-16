@@ -7,7 +7,7 @@ import { useRouter } from "next/router";
 // --- MODIFIED MENU_LIST ---
 const MENU_LIST = [
   { enText: "Home", esText: "Inicio", href: "/" },
-  { enText: "Services", esText: "Servicios", href: "/services" },
+  { enText: "Tours", esText: "Tours", href: "/tours" },
   { enText: "About Us", esText: "Nosotros", href: "/about" }, // Changed to "Nosotros" for common Spanish usage
   { enText: "Contact", esText: "Contacto", href: "/contact" },
   { enText: "Book now", esText: "Reservar Ahora", href: "/book" }, // Changed to "Reservar Ahora"

@@ -9,8 +9,8 @@ export default function Services() {
   return (
     <>
       <Head>
-        <title>CTM Services</title>
-        <meta name="description" content="the easy way to ship" />
+        <title>Tours</title>
+        <meta name="description" content="trexx adventure tours" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>

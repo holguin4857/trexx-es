@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>CTM Cargo Transportation Management</title>
+        <title>trexx adventure tours</title>
         <meta
           name="description"
           content="Simplificamos su logística transfronteriza. Expertos en envíos entre EE.UU. y México a través del corredor Arizona-Sonora. Su carga segura y a tiempo."
