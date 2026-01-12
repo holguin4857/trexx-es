@@ -1,0 +1,12 @@
+{
+  "HomePage": {
+    "title": "Bienvenido a Trexx",
+    "subtitle": "Arquitectura Digital para el Futuro"
+  },
+  "nav": {
+    "home": "Inicio",
+    "projects": "Proyectos",
+    "studio": "Estudio",
+    "contact": "Contacto"
+  }
+}
