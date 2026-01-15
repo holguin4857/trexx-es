@@ -1,12 +1,174 @@
 {
-  "HomePage": {
-    "title": "Welcome to Trexx",
-    "subtitle": "Digital Architecture for the Future"
-  },
-  "nav": {
-    "home": "Home",
+  "Nav": {
     "projects": "Projects",
-    "studio": "Studio",
+    "services": "Services",
+    "about": "About",
     "contact": "Contact"
+  },
+  "Hero": {
+    "badge": "Trexx Enterprise v2.0",
+    "title": "We Build Digital Sovereignty",
+    "description": "Stop renting your infrastructure. We build self-hosted, cloud-native ecosystems using Next.js, AWS, and Automation.",
+    "actions": {
+      "projects": "View Architecture",
+      "contact": "Contact Us"
+    }
+  },
+  "Footer": {
+    "brand_description": "High-performance digital agency based in Spain.", 
+    "about": "About Trexx",
+    "legal": {
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service"
+    },
+    "rights": "All rights reserved."
+  },
+  "About": {
+    "title": "Our Philosophy",
+    "description": "We don't just build websites. We build independent digital engines.",
+    "mission": {
+      "title": "Data Sovereignty",
+      "text": "Our mission is to move businesses away from expensive, shared SaaS platforms to powerful, self-hosted infrastructure they actually own.",
+      "detail": "By leveraging open-source technologies like Chatwoot and Baserow on your own AWS Private Cloud, we eliminate per-agent licensing fees and ensure your data never leaves your control." 
+    },
+    "stats": {
+      "clients": "Deployments",
+      "projects": "Uptime",
+      "years": "AWS Zones"
+    }
+  },
+  "ServicesPage": {
+    "title": "Our Architecture",
+    "description": "A full-stack ecosystem designed for scalability and security.",
+    "cta": {
+      "title": "Ready to own your data?",
+      "text": "Let's build your private cloud today."
+    }
+  },
+  "ProjectsPage": {
+    "title": "Case Studies",
+    "description": "Real enterprise architecture in production.",
+    "cta": {
+      "title": "Need infrastructure like this?",
+      "button": "Start Your Build"
+    }
+  },
+  "ContactPage": {
+    "title": "Contact Engineering",
+    "description": "Ready to upgrade your infrastructure?",
+    "intro": "We are available for enterprise architecture projects. Tell us about your current stack.",
+    "info": {
+      "email": "Email",
+      "phone": "Phone",
+      "office": "HQ",
+      "address": "Valencia, Spain"
+    },
+    "form": {
+      "name": "Full Name",
+      "email": "Work Email",
+      "message": "Project Details",
+      "submit": "Request Consultation",
+      "sending": "Connecting...",
+      "success": "Request received. Engineering will contact you shortly."
+    }
+  },
+  "Index": {
+    "cta": {
+      "title": "Ready to scale?",
+      "text": "Upgrade to a cloud-native architecture today."
+    }
+  },
+  "Services": {
+    "title": "Our Architecture", 
+    "description": "A full-stack ecosystem designed for scalability and security.", 
+    "items": {
+      "0": {
+        "title": "Digital Ecosystems",
+        "description": "Next.js architecture on AWS Amplify. Sub-second loads and Zero-Attack Surface security."
+      },
+      "1": {
+        "title": "Unified Communications",
+        "description": "Centralize WhatsApp, SMS, and Email into one self-hosted dashboard. No per-agent fees."
+      },
+      "2": {
+        "title": "Cloud Automation",
+        "description": "Replace manual data entry with n8n workflows. Sync your website, CRM, and logistics databases automatically."
+      }
+    }
+  },
+  "Pricing": {
+    "title": "Infrastructure Pricing",
+    "subtitle": "One-time build fees. You own the code. You own the data.",
+    "button": "Select Architecture",
+    "popular": "Best Value",
+    "plans": {
+      "starter": {
+        "name": "Digital Core",
+        "features": { 
+          "0": "Next.js Frontend (React)", 
+          "1": "Headless CMS (Frontmatter)", 
+          "2": "AWS Amplify Hosting",
+          "3": "Global Edge Network (CDN)"
+        }
+      },
+      "business": {
+        "name": "Growth Engine",
+        "features": { 
+          "0": "Everything in Core", 
+          "1": "Unified Inbox (Chatwoot)", 
+          "2": "WhatsApp & SMS API Setup", 
+          "3": "VoIP & IVR Routing" 
+        }
+      },
+      "enterprise": {
+        "name": "Enterprise Cloud",
+        "price": "Custom",
+        "features": { 
+          "0": "Private Cloud (AWS Lightsail)", 
+          "1": "n8n Workflow Automation", 
+          "2": "Database (Baserow/SQL)", 
+          "3": "Full Data Sovereignty" 
+        }
+      }
+    }
+  },
+  "Faq": {
+    "title": "Technical FAQ",
+    "subtitle": "Common questions about our infrastructure.",
+    "items": {
+      "q1": "Why Next.js instead of WordPress?",
+      "a1": "Next.js offers server-side rendering for superior SEO and security. Unlike WordPress, it has no database to hack (Zero-Attack Surface).",
+      "q2": "What do you mean by 'Self-Hosted'?",
+      "a2": "Instead of paying monthly fees to SaaS companies, we deploy software like Chatwoot and n8n onto your own AWS servers. You pay for the server, not the seat.",
+      "q3": "Do I own the data?",
+      "a3": "100%. Because the infrastructure runs on your private cloud instance, you have total data sovereignty.",
+      "q4": "Can you automate my logistics?",
+      "a4": "Yes. We use n8n to connect your website forms directly to your logistics database, removing human error."
+    }
+  },
+  "CaseStudies": {
+    "title": "Featured Deployment",
+    "subtitle": "CTM Enterprise Architecture",
+    "result_label": "Metric:",
+    "items": {
+      "1": {
+        "title": "CTM Logistics Core",
+        "category": "Private Cloud",
+        "description": "A complete digital transformation for Cargo Transportation Management. Replaced shared hosting with a private AWS ecosystem.",
+        "stat": "99.999% Uptime"
+      },
+      "2": {
+        "title": "Unified Comms Stack",
+        "category": "VoIP & Chat",
+        "description": "Deployed a 'Single Pane of Glass' for support. Centralized WhatsApp, SMS, and Voice into one dashboard.",
+        "stat": "0 Data Silos"
+      },
+      "3": {
+        "title": "Zero-Trust Web",
+        "category": "Security",
+        "description": "Migrated to a Headless CMS architecture to eliminate SQL injection vulnerabilities entirely.",
+        "stat": "Zero-Attack Surface"
+      }
+    }
   }
 }

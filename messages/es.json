@@ -1,12 +1,174 @@
 {
-  "HomePage": {
-    "title": "Bienvenido a Trexx",
-    "subtitle": "Arquitectura Digital para el Futuro"
-  },
-  "nav": {
-    "home": "Inicio",
+  "Nav": {
     "projects": "Proyectos",
-    "studio": "Estudio",
+    "services": "Servicios",
+    "about": "Filosofía",
     "contact": "Contacto"
+  },
+  "Hero": {
+    "badge": "Trexx Enterprise v2.0",
+    "title": "Construimos Soberanía Digital",
+    "description": "Deja de alquilar tu infraestructura. Construimos ecosistemas nativos en la nube y auto-alojados usando Next.js, AWS y Automatización.",
+    "actions": {
+      "projects": "Ver Arquitectura",
+      "contact": "Contáctanos"
+    }
+  },
+  "Footer": {
+    "brand_description": "Agencia digital de alto rendimiento con sede en España.",
+    "about": "Sobre Trexx",
+    "legal": {
+      "privacy": "Política de Privacidad",
+      "terms": "Términos de Servicio"
+    },
+    "rights": "Todos los derechos reservados."
+  },
+  "About": {
+    "title": "Nuestra Filosofía",
+    "description": "No solo hacemos webs. Construimos motores digitales independientes.",
+    "mission": {
+      "title": "Soberanía de Datos",
+      "text": "Nuestra misión es alejar a las empresas de las costosas plataformas SaaS compartidas hacia una infraestructura potente y auto-alojada que realmente poseen.",
+      "detail": "Al aprovechar tecnologías de código abierto como Chatwoot y Baserow en su propia Nube Privada AWS, eliminamos las tarifas de licencia por agente y aseguramos que sus datos nunca salgan de su control."
+    },
+    "stats": {
+      "clients": "Despliegues",
+      "projects": "Uptime",
+      "years": "Zonas AWS"
+    }
+  },
+  "ServicesPage": {
+    "title": "Nuestra Arquitectura",
+    "description": "Un ecosistema full-stack diseñado para escalabilidad y seguridad.",
+    "cta": {
+      "title": "¿Listo para ser dueño de tus datos?",
+      "text": "Construyamos tu nube privada hoy."
+    }
+  },
+  "ProjectsPage": {
+    "title": "Casos de Estudio",
+    "description": "Arquitectura empresarial real en producción.",
+    "cta": {
+      "title": "¿Necesitas infraestructura así?",
+      "button": "Empieza tu Construcción"
+    }
+  },
+  "ContactPage": {
+    "title": "Contacto Ingeniería",
+    "description": "¿Listo para actualizar tu infraestructura?",
+    "intro": "Estamos disponibles para proyectos de arquitectura empresarial. Cuéntanos sobre tu stack actual.",
+    "info": {
+      "email": "Correo",
+      "phone": "Teléfono",
+      "office": "HQ",
+      "address": "Valencia, España"
+    },
+    "form": {
+      "name": "Nombre Completo",
+      "email": "Correo Corporativo",
+      "message": "Detalles del Proyecto",
+      "submit": "Solicitar Consultoría",
+      "sending": "Conectando...",
+      "success": "Solicitud recibida. Ingeniería contactará pronto."
+    }
+  },
+  "Index": {
+    "cta": {
+      "title": "¿Listo para escalar?",
+      "text": "Actualízate a una arquitectura nativa en la nube hoy."
+    }
+  },
+  "Services": {
+    "title": "Nuestra Arquitectura", 
+    "description": "Un ecosistema full-stack diseñado para escalabilidad y seguridad.", 
+    "items": {
+      "0": {
+        "title": "Ecosistemas Digitales",
+        "description": "Arquitectura Next.js en AWS Amplify. Cargas sub-segundo y seguridad de Superficie de Ataque Cero."
+      },
+      "1": {
+        "title": "Comunicaciones Unificadas",
+        "description": "Centraliza WhatsApp, SMS y Email en un panel auto-alojado. Sin tarifas por agente."
+      },
+      "2": {
+        "title": "Automatización Cloud",
+        "description": "Reemplaza la entrada manual de datos con flujos n8n. Sincroniza tu web, CRM y logística automáticamente."
+      }
+    }
+  },
+  "Pricing": {
+    "title": "Precios de Infraestructura",
+    "subtitle": "Tarifa única de construcción. Eres dueño del código. Eres dueño de los datos.",
+    "button": "Seleccionar Arquitectura",
+    "popular": "Mejor Valor",
+    "plans": {
+      "starter": {
+        "name": "Núcleo Digital",
+        "features": { 
+          "0": "Frontend Next.js (React)", 
+          "1": "CMS Headless (Frontmatter)", 
+          "2": "Hosting AWS Amplify",
+          "3": "Red Global Edge (CDN)"
+        }
+      },
+      "business": {
+        "name": "Motor de Crecimiento",
+        "features": { 
+          "0": "Todo en Núcleo", 
+          "1": "Bandeja Unificada (Chatwoot)", 
+          "2": "API de WhatsApp y SMS", 
+          "3": "VoIP y Enrutamiento IVR" 
+        }
+      },
+      "enterprise": {
+        "name": "Nube Empresarial",
+        "price": "A medida",
+        "features": { 
+          "0": "Nube Privada (AWS Lightsail)", 
+          "1": "Automatización de Flujos (n8n)", 
+          "2": "Base de Datos (Baserow/SQL)", 
+          "3": "Soberanía Total de Datos" 
+        }
+      }
+    }
+  },
+  "Faq": {
+    "title": "FAQ Técnico",
+    "subtitle": "Preguntas comunes sobre nuestra infraestructura.",
+    "items": {
+      "q1": "¿Por qué Next.js en lugar de WordPress?",
+      "a1": "Next.js ofrece renderizado en servidor para SEO y seguridad superior. A diferencia de WordPress, no tiene base de datos que hackear (Superficie de Ataque Cero).",
+      "q2": "¿Qué significa 'Auto-Alojado'?",
+      "a2": "En lugar de pagar tarifas mensuales a empresas SaaS, desplegamos software como Chatwoot y n8n en tus propios servidores AWS. Pagas por el servidor, no por el usuario.",
+      "q3": "¿Soy dueño de los datos?",
+      "a3": "100%. Como la infraestructura corre en tu instancia de nube privada, tienes total soberanía de los datos.",
+      "q4": "¿Podéis automatizar mi logística?",
+      "a4": "Sí. Usamos n8n para conectar los formularios de tu web directamente a tu base de datos logística, eliminando el error humano."
+    }
+  },
+  "CaseStudies": {
+    "title": "Despliegue Destacado",
+    "subtitle": "Arquitectura Empresarial CTM",
+    "result_label": "Métrica:",
+    "items": {
+      "1": {
+        "title": "Núcleo Logístico CTM",
+        "category": "Nube Privada",
+        "description": "Transformación digital completa para CTM. Reemplazo de hosting compartido por un ecosistema privado AWS.",
+        "stat": "99.999% Uptime"
+      },
+      "2": {
+        "title": "Stack de Comms Unificado",
+        "category": "VoIP y Chat",
+        "description": "Despliegue de 'Panel Único' para soporte. Centralización de WhatsApp, SMS y Voz en un dashboard.",
+        "stat": "0 Silos de Datos"
+      },
+      "3": {
+        "title": "Web Zero-Trust",
+        "category": "Seguridad",
+        "description": "Migración a arquitectura CMS Headless para eliminar vulnerabilidades de inyección SQL por completo.",
+        "stat": "Superficie de Ataque Cero"
+      }
+    }
   }
 }

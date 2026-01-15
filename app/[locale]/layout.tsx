@@ -1,31 +1,78 @@
-import { NextIntlClientProvider } from 'next-intl';
-import { getMessages } from 'next-intl/server';
-import { notFound } from 'next/navigation';
-import { routing } from '@/i18n/routing';
-import { ReactNode } from 'react';
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import { notFound } from "next/navigation";
+import { NextIntlClientProvider } from "next-intl";
+import { getMessages } from "next-intl/server";
+import { routing } from "@/i18n/routing";
 
+// 📍 COMPONENT IMPORTS
+import { Navbar } from "@/components/Navbar";
+import { Footer } from "@/components/Footer";
+
+import "../globals.css";
+
+const inter = Inter({ subsets: ["latin"] });
+
+// 📍 PROPS DEFINITION
 type Props = {
-  children: ReactNode;
-  params: Promise<{ locale: string }>; // ⚠️ Strict Next.js 16 Type
+  children: React.ReactNode;
+  params: Promise<{ locale: string }>;
 };
 
-export default async function LocaleLayout({ children, params }: Props) {
-  // 1. Await the params (CRITICAL STEP)
-  const { locale } = await params;
+export async function generateMetadata(props: Props): Promise<Metadata> {
+  const params = await props.params;
+  const { locale } = params;
 
-  // 2. Validate incoming locale
+  return {
+    title: `Trexx Digital | ${locale === "es" ? "Inicio" : "Home"}`,
+    description: "High-performance digital agency based in Spain.",
+  };
+}
+
+export default async function RootLayout(props: Props) {
+  const params = await props.params;
+  const { locale } = params;
+
   if (!routing.locales.includes(locale as any)) {
     notFound();
   }
 
-  // 3. Load messages for the client
   const messages = await getMessages();
 
+  // 👇 THIS IS THE ACTUAL HTML STRUCTURE
   return (
     <html lang={locale}>
-      <body className="antialiased">
+      <body
+        className={`
+          ${inter.className} 
+          antialiased 
+          min-h-screen 
+          bg-white 
+          text-slate-900
+        `}
+      >
+        {/* 📍 Provider: Gives translation powers to everything inside */}
         <NextIntlClientProvider messages={messages}>
-          {children}
+          
+          {/* 📍 The Flex Wrapper: Keeps the Footer at the bottom */}
+          <div 
+            className={`
+              flex 
+              flex-col 
+              min-h-screen
+            `}
+          >
+            {/* 👇 1. TOP: NAVBAR */}
+            <Navbar />
+
+            {/* 👇 2. MIDDLE: THE PAGE SLOT (props.children) */}
+            <main className="grow">
+              {props.children}
+            </main>
+
+            {/* 👇 3. BOTTOM: FOOTER */}
+            <Footer />
+          </div>
         </NextIntlClientProvider>
       </body>
     </html>
