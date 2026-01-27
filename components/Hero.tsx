@@ -1,3 +1,5 @@
+"use client";
+
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/routing";
 import { siteConfig } from "@/config/site";
@@ -30,12 +32,12 @@ export function Hero() {
           rounded-full 
           border 
           border-slate-200 
-          bg-slate-50 
+          bg-slate-100      /* 👈 CHANGED: Was slate-50. Slightly darker grey. */
           px-3 
           py-1 
           text-sm 
-          font-medium 
-          text-slate-900
+          font-medium         /* 👈 CHANGED: Was font-medium. Thicker text. */
+          text-black        /* 👈 CHANGED: Was slate-900. Pure Black. */
         `}
       >
         <span 
@@ -44,7 +46,7 @@ export function Hero() {
             h-2 
             w-2 
             rounded-full 
-            bg-blue-600 
+            bg-black        /* 👈 CHANGED: Was blue-600. The "Dot" is now Black. */
             mr-2
           `}
         ></span>
@@ -57,7 +59,7 @@ export function Hero() {
           text-4xl 
           font-extrabold 
           tracking-tight 
-          text-slate-900 
+          text-black        /* 👈 CHANGED: Was slate-900. Pure Black. */
           sm:text-6xl 
           max-w-4xl
         `}
@@ -70,7 +72,7 @@ export function Hero() {
         className={`
           max-w-2xl 
           text-lg 
-          text-slate-600 
+          text-slate-600    /* Keep this Dark Grey for hierarchy vs Title */
           leading-relaxed
         `}
       >
@@ -87,35 +89,46 @@ export function Hero() {
           gap-4
         `}
       >
+        {/* Primary Button */}
         <Link
           href={siteConfig.links.projects}
           className={`
-            rounded-md 
-            bg-slate-900 
+            inline-flex        /* 👈 CHANGED */
+            items-center       /* 👈 CHANGED */
+            justify-center     /* 👈 CHANGED */
+            min-w-[200px]      /* 👈 CHANGED */
+            rounded-full 
+            bg-black          /* 👈 CHANGED: Was slate-900. Pure Black button. */
             px-8 
             py-3 
             text-sm 
-            font-semibold 
+            font-bold         /* 👈 CHANGED: Thicker font. */
             text-white 
             shadow-sm 
-            hover:bg-slate-700 
+            hover:bg-slate-800 /* Slightly lighter on hover */
             transition-colors
           `}
         >
           {t("actions.projects")}
         </Link>
+
+        {/* Secondary Button */}
         <Link
           href={siteConfig.links.contact}
           className={`
-            rounded-md 
+            inline-flex        /* 👈 CHANGED: Ensures width works */
+            items-center       /* 👈 CHANGED: Vertical Center */
+            justify-center     /* 👈 CHANGED: Horizontal Center */
+            min-w-[200px]      /* 👈 CHANGED: Enforces equal width */
+            rounded-full 
             border 
             border-slate-200 
             bg-white 
             px-8 
             py-3 
             text-sm 
-            font-semibold 
-            text-slate-900 
+            font-bold         /* 👈 CHANGED: Thicker font. */
+            text-black        /* 👈 CHANGED: Was slate-900. */
             shadow-sm 
             hover:bg-slate-50 
             transition-colors

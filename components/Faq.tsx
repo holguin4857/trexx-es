@@ -45,7 +45,7 @@ export function Faq() {
           >
             {t("title")}
           </h2>
-          <p className="text-slate-600 mt-2">
+          <p className="text-black mt-2">
             {t("subtitle")}
           </p>
         </div>
@@ -101,7 +101,7 @@ export function Faq() {
                   className={`
                     px-6 
                     pb-6 
-                    text-slate-600 
+                    text-black 
                     leading-relaxed
                   `}
                 >

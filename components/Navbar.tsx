@@ -42,6 +42,7 @@ export function Navbar() {
         `}
       >
         
+        {/* BRAND LOGO */}
         <div 
           className={`
             flex 
@@ -50,27 +51,27 @@ export function Navbar() {
             font-bold 
             text-xl 
             tracking-tight 
-            text-slate-900
+            text-black 
           `}
         >
           <div 
             className={`
               h-6 
               w-6 
-              bg-blue-600 
+              bg-black 
               rounded-md
             `} 
           />
           <Link href="/">{siteConfig.name}</Link>
         </div>
 
-        {/* Desktop Nav */}
+        {/* DESKTOP NAV */}
         <nav 
           className={`
             hidden 
             md:flex 
             items-center 
-            gap-8
+            gap-2           /* 👈 Reduced gap slightly since items are wider now */
           `}
         >
           {siteConfig.navItems.map((item) => (
@@ -79,10 +80,19 @@ export function Navbar() {
               href={item.href}
               className={`
                 text-sm 
-                font-medium 
-                transition-colors 
-                hover:text-blue-600 
-                ${pathname === item.href ? "text-blue-600" : "text-slate-600"}
+                font-bold 
+                px-4 py-2          /* 👈 CHANGED: Added padding for the pill shape */
+                rounded-full       /* 👈 CHANGED: Makes it a "Pill" */
+                transition-all 
+                
+                /* 👇 HOVER STATE: The "Revolut" Grey Button Effect */
+                hover:bg-slate-100 
+                hover:text-black
+
+                ${pathname === item.href 
+                  ? "bg-slate-100 text-black" /* Optional: Keep active link highlighted? */ 
+                  : "text-black"
+                }
               `}
             >
               {t(item.label)} 
@@ -90,6 +100,7 @@ export function Navbar() {
           ))}
         </nav>
 
+        {/* LANGUAGE & MOBILE TOGGLE */}
         <div className="flex items-center gap-4">
           <button
             onClick={() => onLanguageChange(locale === "en" ? "es" : "en")}
@@ -98,15 +109,17 @@ export function Navbar() {
               items-center 
               gap-1 
               text-xs 
-              font-semibold 
-              text-slate-500 
-              hover:text-slate-900 
+              font-bold 
               uppercase 
-              border 
-              border-slate-200 
-              rounded 
-              px-2 
-              py-1
+              
+              /* 👇 Also applied the Pill effect here for consistency */
+              px-3 
+              py-2 
+              rounded-full
+              text-slate-500 
+              hover:bg-slate-100 
+              hover:text-black
+              transition-all
             `}
           >
             <Globe size={14} />
@@ -114,7 +127,7 @@ export function Navbar() {
           </button>
 
           <button 
-            className="md:hidden text-slate-900" 
+            className="md:hidden text-black" 
             onClick={() => setIsOpen(!isOpen)}
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -122,6 +135,7 @@ export function Navbar() {
         </div>
       </div>
 
+      {/* MOBILE MENU */}
       {isOpen && (
         <div 
           className={`
@@ -132,17 +146,21 @@ export function Navbar() {
             p-4
           `}
         >
-          <nav className="flex flex-col space-y-4">
+          <nav className="flex flex-col space-y-2">
             {siteConfig.navItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
                 onClick={() => setIsOpen(false)}
                 className={`
+                  block
                   text-base 
-                  font-medium 
-                  text-slate-600 
-                  hover:text-blue-600
+                  font-bold 
+                  px-4 py-3        /* Larger touch targets on mobile */
+                  rounded-lg       /* Rounded corners for mobile list items */
+                  text-black 
+                  hover:bg-slate-50 
+                  hover:text-black
                 `}
               >
                 {t(item.label)} 

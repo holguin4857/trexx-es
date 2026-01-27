@@ -48,7 +48,7 @@ export default async function RootLayout(props: Props) {
           antialiased 
           min-h-screen 
           bg-white 
-          text-slate-900
+          text-black
         `}
       >
         {/* 📍 Provider: Gives translation powers to everything inside */}

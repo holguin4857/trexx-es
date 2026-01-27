@@ -1,30 +1,33 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/routing";
 import { Check } from "lucide-react";
 
 export function Pricing() {
   const t = useTranslations("Pricing");
 
-  // We define the structure here, but the TEXT comes from 't(...)'
   const plans = [
     {
       key: "starter",
       price: "€999",
       popular: false,
-      featureCount: 3 // Matches the 0, 1, 2 keys in your JSON
+      featureCount: 4,
+      href: "/contact?plan=starter"
     },
     {
       key: "business",
       price: "€2,499",
-      popular: true,
-      featureCount: 4 // Matches 0, 1, 2, 3
+      popular: true, 
+      featureCount: 4,
+      href: "/contact?plan=business"
     },
     {
       key: "enterprise",
-      price: t("plans.enterprise.price"), // "Custom" / "A medida"
+      price: t("plans.enterprise.price"),
       popular: false,
-      featureCount: 4
+      featureCount: 4,
+      href: "/contact?plan=enterprise"
     }
   ];
 
@@ -32,49 +35,52 @@ export function Pricing() {
     <section 
       className={`
         py-20 
-        bg-slate-50
+        bg-slate-50 /* Light grey background to make white cards pop */
       `}
     >
       <div className="container mx-auto px-4">
         
-        <div 
-          className={`
-            text-center 
-            max-w-2xl 
-            mx-auto 
-            mb-16
-          `}
-        >
-          <h2 
-            className={`
-              text-3xl 
-              font-bold 
-              text-slate-900
-            `}
-          >
+        {/* HEADER */}
+        <div className="text-center max-w-2xl mx-auto mb-16">
+          <h2 className="text-3xl font-extrabold tracking-tight text-black mb-4">
             {t("title")}
           </h2>
-          <p className="text-slate-600 mt-4">
+          <p className="text-xl text-slate-600">
             {t("subtitle")}
           </p>
         </div>
 
+        {/* PRICING GRID */}
         <div className="grid md:grid-cols-3 gap-8">
           {plans.map((plan) => (
-            <div 
+            
+            <Link 
               key={plan.key}
+              href={plan.href}
               className={`
                 relative 
+                flex 
+                flex-col 
                 p-8 
-                bg-white 
-                rounded-2xl 
-                border 
+                rounded-3xl 
+                bg-white             /* Default: White */
+                transition-all 
+                duration-300
+                group                /* For hover effects */
+                
+                /* BORDER LOGIC: Popular gets Black border, others get Grey */
+                border
                 ${plan.popular 
-                  ? "border-blue-600 shadow-xl" 
-                  : "border-slate-200 shadow-sm"
+                  ? "border-black shadow-xl scale-105 z-10" 
+                  : "border-slate-200 shadow-sm hover:border-black"
                 }
+
+                /* 👈 THE "CLICK/HOVER" EFFECT: Invert colors on hover */
+                hover:bg-black 
               `}
             >
+              
+              {/* POPULAR BADGE */}
               {plan.popular && (
                 <span 
                   className={`
@@ -82,75 +88,113 @@ export function Pricing() {
                     -top-4 
                     left-1/2 
                     -translate-x-1/2 
-                    bg-blue-600 
+                    bg-black        /* Default: Black Badge */
                     text-white 
-                    px-3 
+                    px-4 
                     py-1 
                     rounded-full 
                     text-xs 
                     font-bold 
                     uppercase 
                     tracking-wide
+                    
+                    /* Badge turns White on Hover */
+                    group-hover:bg-white
+                    group-hover:text-black
+                    transition-colors
                   `}
                 >
                   {t("popular")}
                 </span>
               )}
               
-              <h3 className="font-bold text-lg text-slate-900">
+              {/* PLAN NAME */}
+              <h3 
+                className={`
+                  font-bold 
+                  text-xl 
+                  mb-2
+                  text-black               /* Default: Black */
+                  group-hover:text-white   /* Hover: White */
+                  transition-colors
+                `}
+              >
                 {t(`plans.${plan.key}.name`)}
               </h3>
               
-              <div className="my-4">
-                <span className="text-4xl font-extrabold text-slate-900">
+              {/* PRICE */}
+              <div className="mb-6">
+                <span 
+                  className={`
+                    text-4xl 
+                    font-extrabold 
+                    tracking-tight
+                    text-black             /* Default: Black */
+                    group-hover:text-white /* Hover: White */
+                    transition-colors
+                  `}
+                >
                   {plan.price}
                 </span>
               </div>
               
-              <ul className="space-y-4 mb-8">
-                {/* Loop based on featureCount to grab keys 0, 1, 2... */}
+              {/* FEATURES */}
+              <ul className="space-y-4 mb-8 flex-1">
                 {Array.from({ length: plan.featureCount }).map((_, index) => (
                   <li 
                     key={index} 
                     className={`
                       flex 
                       items-center 
-                      text-slate-600 
                       text-sm
+                      font-medium
+                      text-slate-600          /* Default: Grey */
+                      group-hover:text-slate-300 /* Hover: Light Grey */
+                      transition-colors
                     `}
                   >
                     <Check 
                       className={`
-                        h-4 
-                        w-4 
-                        text-blue-600 
+                        h-5 
+                        w-5 
                         mr-3 
                         flex-shrink-0
+                        text-black            /* Default: Black Check */
+                        group-hover:text-white /* Hover: White Check */
+                        transition-colors
                       `} 
                     />
-                    {/* Dynamic Key Lookup: plans.starter.features.0 */}
                     {t(`plans.${plan.key}.features.${index}`)}
                   </li>
                 ))}
               </ul>
               
-              <button 
+              {/* BUTTON */}
+              <div 
                 className={`
                   w-full 
-                  py-3 
-                  px-4 
-                  rounded-lg 
-                  font-semibold 
-                  transition-colors 
+                  py-4 
+                  px-6 
+                  rounded-full 
+                  font-bold 
+                  text-center 
+                  transition-all
+                  
+                  /* BUTTON COLORS */
                   ${plan.popular 
-                    ? "bg-blue-600 text-white hover:bg-blue-700" 
-                    : "bg-slate-100 text-slate-900 hover:bg-slate-200"
+                    ? "bg-black text-white"  // Popular Button: Black
+                    : "bg-slate-100 text-black" // Standard Button: Grey
                   }
+
+                  /* HOVER STATE: Button Inverts against the black card */
+                  group-hover:bg-white 
+                  group-hover:text-black
                 `}
               >
                 {t("button")}
-              </button>
-            </div>
+              </div>
+
+            </Link>
           ))}
         </div>
       </div>

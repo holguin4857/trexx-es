@@ -15,7 +15,7 @@ export function Footer() {
       className={`
         border-t 
         border-slate-200 
-        bg-slate-50 
+        bg-white 
         pt-16 
         pb-8 
         mt-auto
@@ -38,7 +38,7 @@ export function Footer() {
               className={`
                 text-xl 
                 font-bold 
-                text-slate-900 
+                text-black 
                 tracking-tight
               `}
             >
@@ -48,7 +48,7 @@ export function Footer() {
               className={`
                 mt-4 
                 text-sm 
-                text-slate-600 
+                text-black 
                 max-w-xs
               `}
             >
@@ -62,8 +62,8 @@ export function Footer() {
                 target="_blank" 
                 rel="noreferrer" 
                 className={`
-                  text-slate-400 
-                  hover:text-blue-600 
+                  text-black
+                  hover:text-slate-500 
                   transition-colors
                 `}
               >
@@ -74,8 +74,8 @@ export function Footer() {
                 target="_blank" 
                 rel="noreferrer" 
                 className={`
-                  text-slate-400 
-                  hover:text-blue-600 
+                  text-black
+                  hover:text-slate-500 
                   transition-colors
                 `}
               >
@@ -89,7 +89,7 @@ export function Footer() {
             <h3 
               className={`
                 font-semibold 
-                text-slate-900 
+                text-black 
                 mb-4
               `}
             >
@@ -101,8 +101,8 @@ export function Footer() {
                   <Link 
                     href={item.href} 
                     className={`
-                      text-slate-600 
-                      hover:text-blue-600 
+                      text-black 
+                      hover:text-slate-500 
                       transition-colors
                     `}
                   >
@@ -118,7 +118,7 @@ export function Footer() {
             <h3 
               className={`
                 font-semibold 
-                text-slate-900 
+                text-black 
                 mb-4
               `}
             >
@@ -129,8 +129,8 @@ export function Footer() {
                 <Link 
                   href="#" 
                   className={`
-                    text-slate-600 
-                    hover:text-blue-600 
+                    text-black 
+                    hover:text-slate-500 
                     transition-colors
                   `}
                 >
@@ -141,8 +141,8 @@ export function Footer() {
                 <Link 
                   href="#" 
                   className={`
-                    text-slate-600 
-                    hover:text-blue-600 
+                    text-black 
+                    hover:text-slate-500 
                     transition-colors
                   `}
                 >

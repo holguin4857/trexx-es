@@ -1,3 +1,5 @@
+"use client";
+
 export function PageHeader({ 
   title, 
   description 
@@ -8,10 +10,10 @@ export function PageHeader({
   return (
     <section 
       className={`
-        bg-slate-50 
+        bg-white           /* 👈 CHANGED: Was slate-50. Now Clean White. */
         border-b 
         border-slate-200 
-        py-20
+        py-24              /* 👈 Increased padding for more "Air" */
       `}
     >
       <div 
@@ -22,23 +24,27 @@ export function PageHeader({
           text-center
         `}
       >
+        {/* The Big Page Title */}
         <h1 
           className={`
-            text-3xl 
-            font-extrabold 
-            text-slate-900 
-            sm:text-5xl 
-            mb-4
+            text-4xl 
+            font-extrabold    /* 👈 CHANGED: Thicker font */
+            tracking-tight    /* 👈 CHANGED: Tighter letters */
+            text-black        /* 👈 CHANGED: Was slate-900. Now Pure Black. */
+            sm:text-6xl 
+            mb-6
           `}
         >
           {title}
         </h1>
+        
+        {/* The Description below it */}
         <p 
           className={`
             max-w-2xl 
             mx-auto 
-            text-lg 
-            text-slate-600
+            text-xl           /* 👈 Larger text size */
+            text-slate-600    /* Dark Grey for readability */
           `}
         >
           {description}

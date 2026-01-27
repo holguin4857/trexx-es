@@ -3,11 +3,11 @@
 import { useTranslations } from "next-intl";
 import { ArrowUpRight } from "lucide-react";
 
-// Visual Data only (Colors/Images don't need translation)
+// 1. VISUAL DATA (Monochrome backgrounds for the placeholders)
 const projects = [
   { id: 1, image: "bg-slate-800" },
-  { id: 2, image: "bg-blue-900" },
-  { id: 3, image: "bg-indigo-900" },
+  { id: 2, image: "bg-slate-900" },
+  { id: 3, image: "bg-black" },
 ];
 
 export function CaseStudies() {
@@ -21,6 +21,8 @@ export function CaseStudies() {
       `}
     >
       <div className="container mx-auto px-4">
+        
+        {/* 2. SECTION HEADER (Title & Subtitle) */}
         <div
           className={`
             max-w-3xl 
@@ -32,16 +34,20 @@ export function CaseStudies() {
           <h2
             className={`
               text-3xl 
-              font-bold 
-              text-slate-900 
+              font-extrabold 
+              tracking-tight 
+              text-black 
               mb-4
             `}
           >
             {t("title")}
           </h2>
-          <p className="text-lg text-slate-600">{t("subtitle")}</p>
+          <p className="text-lg text-slate-600">
+            {t("subtitle")}
+          </p>
         </div>
 
+        {/* 3. PROJECTS GRID (Layout Wrapper) */}
         <div
           className={`
             grid 
@@ -51,6 +57,8 @@ export function CaseStudies() {
           `}
         >
           {projects.map((project) => (
+            
+            /* 4. INDIVIDUAL PROJECT CARD */
             <div
               key={project.id}
               className={`
@@ -62,12 +70,15 @@ export function CaseStudies() {
                 border-slate-200 
                 rounded-2xl 
                 overflow-hidden 
-                hover:shadow-xl 
-                transition-all 
+                transition-colors   /* 👈 Only transition colors now */
                 duration-300
+                
+                /* 👇 INTERACTION: No Shadow. Border turns Black on hover. */
+                hover:border-black
               `}
             >
-              {/* Image Area */}
+              
+              {/* 5. IMAGE AREA (Top half) */}
               <div
                 className={`
                   h-64 
@@ -77,6 +88,7 @@ export function CaseStudies() {
                   overflow-hidden
                 `}
               >
+                {/* Overlay that darkens slightly on hover */}
                 <div
                   className={`
                     absolute 
@@ -87,29 +99,28 @@ export function CaseStudies() {
                   `}
                 />
 
+                {/* Category Pill (Top Left) */}
                 <span
                   className={`
                     absolute 
                     top-4 
                     left-4 
-                    bg-white/90 
-                    backdrop-blur 
+                    bg-white 
                     px-3 
                     py-1 
                     text-xs 
                     font-bold 
                     uppercase 
                     tracking-wide 
-                    text-slate-900 
+                    text-black 
                     rounded-full
                   `}
                 >
-                  {/* Dynamic Lookup: items.1.category */}
                   {t(`items.${project.id}.category`)}
                 </span>
               </div>
 
-              {/* Content Area */}
+              {/* 6. CONTENT AREA (Bottom half) */}
               <div
                 className={`
                   flex 
@@ -118,22 +129,27 @@ export function CaseStudies() {
                   p-6
                 `}
               >
+                {/* Title & Arrow Row */}
                 <div className="flex justify-between items-start mb-4">
                   <h3
                     className={`
                       text-xl 
                       font-bold 
-                      text-slate-900 
-                      group-hover:text-blue-600 
-                      transition-colors
+                      text-black 
+                      group-hover:underline 
+                      decoration-2
+                      underline-offset-4
+                      transition-all
                     `}
                   >
                     {t(`items.${project.id}.title`)}
                   </h3>
+                  
+                  {/* The Arrow Icon */}
                   <ArrowUpRight
                     className={`
                       text-slate-400 
-                      group-hover:text-blue-600 
+                      group-hover:text-black 
                       group-hover:translate-x-1 
                       group-hover:-translate-y-1 
                       transition-all
@@ -141,6 +157,7 @@ export function CaseStudies() {
                   />
                 </div>
 
+                {/* Description Text */}
                 <p
                   className={`
                     text-slate-600 
@@ -151,6 +168,7 @@ export function CaseStudies() {
                   {t(`items.${project.id}.description`)}
                 </p>
 
+                {/* Bottom Metric (The Footer of the card) */}
                 <div
                   className={`
                     mt-auto 
@@ -160,8 +178,8 @@ export function CaseStudies() {
                     flex 
                     items-center 
                     text-sm 
-                    font-medium 
-                    text-blue-600
+                    font-extrabold 
+                    text-black
                   `}
                 >
                   {t("result_label")} {t(`items.${project.id}.stat`)}

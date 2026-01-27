@@ -50,7 +50,7 @@ export default function ContactPage() {
             
             <p 
               className={`
-                text-slate-600 
+                text-black 
                 leading-relaxed
               `}
             >
@@ -72,7 +72,7 @@ export default function ContactPage() {
                   <h3 className="font-semibold text-slate-900">
                     {t("info.email")} {/* 👈 Localized */}
                   </h3>
-                  <p className="text-slate-600">hello@trexx.digital</p>
+                  <p className="text-black">hello@trexx.digital</p>
                 </div>
               </div>
 
@@ -85,7 +85,7 @@ export default function ContactPage() {
                   <h3 className="font-semibold text-slate-900">
                     {t("info.phone")} {/* 👈 Localized */}
                   </h3>
-                  <p className="text-slate-600">+34 900 123 456</p>
+                  <p className="text-black">+34 900 123 456</p>
                 </div>
               </div>
 
@@ -98,7 +98,7 @@ export default function ContactPage() {
                   <h3 className="font-semibold text-slate-900">
                     {t("info.office")} {/* 👈 Localized */}
                   </h3>
-                  <p className="text-slate-600">
+                  <p className="text-black">
                     {t("info.address")} {/* 👈 Localized */}
                   </p>
                 </div>
