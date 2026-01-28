@@ -9,122 +9,43 @@ const iconMap: Record<string, LucideIcon> = {
   cpu: Cpu,
 };
 
-// Data Structure
-const serviceItems = [
-  { icon: "globe" },   // Index 0
-  { icon: "message" }, // Index 1
-  { icon: "cpu" }      // Index 2
-];
+const serviceItems = [{ icon: "globe" }, { icon: "message" }, { icon: "cpu" }];
 
 export function Services() {
   const t = useTranslations("Services");
 
   return (
-    <section 
-      className={`
-        container 
-        mx-auto 
-        px-4 
-        py-20
-      `}
-    >
+    <section className="container mx-auto px-4 py-24"> {/* 👈 Consistent py-24 padding */}
       
-      {/* 1. SECTION HEADER (The Title & Subtitle) */}
-      <div 
-        className={`
-          text-center 
-          mb-16            /* Increased spacing for a cleaner look */
-        `}
-      >
-        <h2 
-          className={`
-            text-3xl 
-            font-extrabold /* 👈 CHANGED: Thicker font for impact */
-            tracking-tight /* 👈 CHANGED: Tight spacing (Revolut style) */
-            text-black     /* 👈 CHANGED: Was slate-900. Pure Black. */
-            mb-4
-          `}
-        >
+      <div className="text-center mb-20">
+        <h2 className="text-4xl font-extrabold tracking-tight text-black mb-6">
           {t("title", { fallback: "Our Architecture" })} 
         </h2>
-        <p 
-          className={`
-            text-xl 
-            text-slate-600 /* Keep this dark grey for hierarchy */
-            max-w-2xl 
-            mx-auto
-          `}
-        >
+        {/* Section Description: 20px */}
+        <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
           {t("description", { fallback: "Built for scale." })}
         </p>
       </div>
 
-      {/* 2. THE CARD GRID (3 Columns) */}
-      <div 
-        className={`
-          grid 
-          grid-cols-1 
-          md:grid-cols-3 
-          gap-8
-        `}
-      >
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
         {serviceItems.map((service, index) => {
           const Icon = iconMap[service.icon] || Code;
 
           return (
-            /* 3. INDIVIDUAL SERVICE CARD */
             <div 
               key={index} 
-              className={`
-                p-8              /* Increased padding for "Airy" feel */
-                rounded-2xl 
-                border 
-                border-slate-200 
-                bg-white 
-                transition-colors   /* Smooth animation */
-                group            /* Allows hover effects on child elements */
-              `}
+              className="p-10 rounded-3xl border border-slate-200 bg-white hover:border-black transition-colors group"
             >
-              
-              {/* 4. THE ICON BOX (Circle/Square) */}
-              <div 
-                className={`
-                  h-12 
-                  w-12 
-                  bg-slate-100       /* 👈 CHANGED: Was blue-50. Light Grey. */
-                  rounded-xl         /* Slightly more square than rounded-lg */
-                  flex 
-                  items-center 
-                  justify-center 
-                  text-black         /* 👈 CHANGED: Was blue-600. Icon is Black. */
-                  mb-6 
-                  transition-colors 
-                  duration-300
-                  group-hover:bg-black     /* 👈 HOVER: Box turns Black */
-                  group-hover:text-white   /* 👈 HOVER: Icon turns White */
-                `}
-              >
-                <Icon size={24} />
+              <div className="h-14 w-14 bg-slate-100 rounded-2xl flex items-center justify-center text-black mb-8 transition-colors group-hover:bg-black group-hover:text-white">
+                <Icon size={28} />
               </div>
 
-              {/* 5. CARD CONTENT */}
-              <h3 
-                className={`
-                  text-lg
-                  font-bold        /* 👈 CHANGED: Thicker font */
-                  text-black       /* 👈 CHANGED: Was slate-900 */
-                  mb-3
-                `}
-              >
+              <h3 className="text-2xl font-bold text-black mb-4">
                 {t(`items.${index}.title`)}
               </h3>
               
-              <p 
-                className={`
-                  text-slate-600   /* Dark grey for readability */
-                  leading-relaxed
-                `}
-              >
+              {/* Card Text: 20px (text-xl) */}
+              <p className="text-xl text-slate-600 leading-relaxed">
                 {t(`items.${index}.description`)}
               </p>
             </div>

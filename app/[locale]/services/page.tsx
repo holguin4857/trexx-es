@@ -1,6 +1,7 @@
 import { useTranslations } from "next-intl";
 import { PageHeader } from "@/components/PageHeader";
 import { Services } from "@/components/Services";
+import { ServicesCTA } from "@/components/ServicesCTA"; // 👈 Your new Dark CTA
 
 export const metadata = {
   title: "Services | Trexx Digital",
@@ -11,50 +12,19 @@ export default function ServicesPage() {
   const t = useTranslations("ServicesPage");
 
   return (
-    <div>
-      {/* 1. The Header (Localized) */}
+    <div className="flex flex-col">
+      {/* 1. Header Block (Top of page) */}
       <PageHeader 
         title={t("title")} 
         description={t("description")} 
       />
 
-      {/* 2. The Content (Recycled) */}
-      <div 
-        className={`
-          bg-white 
-          min-h-[50vh]
-        `}
-      >
-        <Services />
-      </div>
+      {/* 2. The Services Grid (Middle of page) */}
+      {/* Note: The Services component has its own internal padding/container */}
+      <Services />
 
-      {/* 3. Call to Action - NOW LOCALIZED 👇 */}
-      <section 
-        className={`
-          py-20 
-          bg-slate-900 
-          text-center 
-          text-white
-        `}
-      >
-        <h2 
-          className={`
-            text-2xl 
-            font-bold 
-            mb-4
-          `}
-        >
-          {t("cta.title")}
-        </h2>
-        <p 
-          className={`
-            mb-8 
-            text-slate-300
-          `}
-        >
-          {t("cta.text")}
-        </p>
-      </section>
+      {/* 3. The Call to Action (Bottom of page) */}
+      <ServicesCTA />
     </div>
   );
 }

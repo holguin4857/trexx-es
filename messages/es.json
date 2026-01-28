@@ -39,10 +39,11 @@
   },
   "ServicesPage": {
     "title": "Nuestra Arquitectura",
-    "description": "Un ecosistema full-stack diseñado para escalabilidad y seguridad.",
+    "description": "Un ecosistema full-stack diseñado para escalabilidad.",
     "cta": {
-      "title": "¿Listo para ser dueño de tus datos?",
-      "text": "Construyamos tu nube privada hoy."
+      "title": "¿Listo para ser dueño de sus datos?",
+      "text": "Construyamos su nube privada hoy.",
+      "button": "Empezar Transformación"
     }
   },
   "ProjectsPage": {
@@ -79,8 +80,8 @@
     }
   },
   "Services": {
-    "title": "Nuestra Arquitectura", 
-    "description": "Un ecosistema full-stack diseñado para escalabilidad y seguridad.", 
+    "title": "Nuestra Arquitectura",
+    "description": "Un ecosistema full-stack diseñado para escalabilidad y seguridad.",
     "items": {
       "0": {
         "title": "Ecosistemas Digitales",
@@ -104,30 +105,30 @@
     "plans": {
       "starter": {
         "name": "Núcleo Digital",
-        "features": { 
-          "0": "Frontend Next.js (React)", 
-          "1": "CMS Headless (Frontmatter)", 
+        "features": {
+          "0": "Frontend Next.js (React)",
+          "1": "CMS Headless (Frontmatter)",
           "2": "Hosting AWS Amplify",
           "3": "Red Global Edge (CDN)"
         }
       },
       "business": {
         "name": "Motor de Crecimiento",
-        "features": { 
-          "0": "Todo en Núcleo", 
-          "1": "Bandeja Unificada (Chatwoot)", 
-          "2": "API de WhatsApp y SMS", 
-          "3": "VoIP y Enrutamiento IVR" 
+        "features": {
+          "0": "Todo en Núcleo",
+          "1": "Bandeja Unificada (Chatwoot)",
+          "2": "API de WhatsApp y SMS",
+          "3": "VoIP y Enrutamiento IVR"
         }
       },
       "enterprise": {
         "name": "Nube Empresarial",
         "price": "A medida",
-        "features": { 
-          "0": "Nube Privada (AWS Lightsail)", 
-          "1": "Automatización de Flujos (n8n)", 
-          "2": "Base de Datos (Baserow/SQL)", 
-          "3": "Soberanía Total de Datos" 
+        "features": {
+          "0": "Nube Privada (AWS Lightsail)",
+          "1": "Automatización de Flujos (n8n)",
+          "2": "Base de Datos (Baserow/SQL)",
+          "3": "Soberanía Total de Datos"
         }
       }
     }

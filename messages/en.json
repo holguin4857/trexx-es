@@ -15,7 +15,7 @@
     }
   },
   "Footer": {
-    "brand_description": "High-performance digital agency based in Spain.", 
+    "brand_description": "High-performance digital agency based in Spain.",
     "about": "About Trexx",
     "legal": {
       "privacy": "Privacy Policy",
@@ -29,7 +29,7 @@
     "mission": {
       "title": "Data Sovereignty",
       "text": "Our mission is to move businesses away from expensive, shared SaaS platforms to powerful, self-hosted infrastructure they actually own.",
-      "detail": "By leveraging open-source technologies like Chatwoot and Baserow on your own AWS Private Cloud, we eliminate per-agent licensing fees and ensure your data never leaves your control." 
+      "detail": "By leveraging open-source technologies like Chatwoot and Baserow on your own AWS Private Cloud, we eliminate per-agent licensing fees and ensure your data never leaves your control."
     },
     "stats": {
       "clients": "Deployments",
@@ -42,7 +42,8 @@
     "description": "A full-stack ecosystem designed for scalability and security.",
     "cta": {
       "title": "Ready to own your data?",
-      "text": "Let's build your private cloud today."
+      "text": "Let's build your private cloud today.",
+      "button": "Start Transformation"
     }
   },
   "ProjectsPage": {
@@ -79,8 +80,8 @@
     }
   },
   "Services": {
-    "title": "Our Architecture", 
-    "description": "A full-stack ecosystem designed for scalability and security.", 
+    "title": "Our Architecture",
+    "description": "A full-stack ecosystem designed for scalability and security.",
     "items": {
       "0": {
         "title": "Digital Ecosystems",
@@ -104,30 +105,30 @@
     "plans": {
       "starter": {
         "name": "Digital Core",
-        "features": { 
-          "0": "Next.js Frontend (React)", 
-          "1": "Headless CMS (Frontmatter)", 
+        "features": {
+          "0": "Next.js Frontend (React)",
+          "1": "Headless CMS (Frontmatter)",
           "2": "AWS Amplify Hosting",
           "3": "Global Edge Network (CDN)"
         }
       },
       "business": {
         "name": "Growth Engine",
-        "features": { 
-          "0": "Everything in Core", 
-          "1": "Unified Inbox (Chatwoot)", 
-          "2": "WhatsApp & SMS API Setup", 
-          "3": "VoIP & IVR Routing" 
+        "features": {
+          "0": "Everything in Core",
+          "1": "Unified Inbox (Chatwoot)",
+          "2": "WhatsApp & SMS API Setup",
+          "3": "VoIP & IVR Routing"
         }
       },
       "enterprise": {
         "name": "Enterprise Cloud",
         "price": "Custom",
-        "features": { 
-          "0": "Private Cloud (AWS Lightsail)", 
-          "1": "n8n Workflow Automation", 
-          "2": "Database (Baserow/SQL)", 
-          "3": "Full Data Sovereignty" 
+        "features": {
+          "0": "Private Cloud (AWS Lightsail)",
+          "1": "n8n Workflow Automation",
+          "2": "Database (Baserow/SQL)",
+          "3": "Full Data Sovereignty"
         }
       }
     }
