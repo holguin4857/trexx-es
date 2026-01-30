@@ -6,12 +6,12 @@
     "contact": "Contact"
   },
   "Hero": {
-    "badge": "Trexx Enterprise v2.0",
-    "title": "We Build Digital Sovereignty",
-    "description": "Stop renting your infrastructure. We build self-hosted, cloud-native ecosystems using Next.js, AWS, and Automation.",
+    "badge": "Enterprise Architecture v2.0",
+    "title": "Stop Renting Your Technology.",
+    "description": "We replace expensive monthly SaaS subscriptions with high-performance, self-hosted platforms that you own 100%. Lower costs, faster speeds, and total control.",
     "actions": {
-      "projects": "View Architecture",
-      "contact": "Contact Us"
+      "projects": "View Case Studies",
+      "contact": "Start Your Build"
     }
   },
   "Footer": {
@@ -38,8 +38,8 @@
     }
   },
   "ServicesPage": {
-    "title": "Our Architecture",
-    "description": "A full-stack ecosystem designed for scalability and security.",
+    "title": "Digital Infrastructure",
+    "description": "We build the engines that run high-growth businesses. Fast, secure, and fully owned by you.",
     "cta": {
       "title": "Ready to own your data?",
       "text": "Let's build your private cloud today.",
@@ -80,20 +80,56 @@
     }
   },
   "Services": {
-    "title": "Our Architecture",
-    "description": "A full-stack ecosystem designed for scalability and security.",
+    "title": "Our Solutions",
+    "description": "Enterprise-grade infrastructure designed to increase revenue and reduce operational costs.",
     "items": {
       "0": {
-        "title": "Digital Ecosystems",
-        "description": "Next.js architecture on AWS Amplify. Sub-second loads and Zero-Attack Surface security."
+        "title": "High-Performance Platforms",
+        "description": "Stop losing customers to slow websites. We build enterprise-grade platforms that load instantly.",
+        "details": {
+          "tagline": "Turn your website into your best salesperson.",
+          "problem": "Most websites are just digital brochures. We build conversion machines. By moving away from slow WordPress themes to custom infrastructure, we ensure your site loads instantly.",
+          "result": "The Result: Google ranks you higher (SEO), customers don't bounce due to load times, and your brand trust skyrockets. Plus, we handle the boring setup—domains, emails, and social accounts.",
+          "tech_title": "The Technical Engine",
+          "tech_list": {
+            "0": "Next.js: Sub-second page loads & Zero-Attack Surface.",
+            "1": "AWS Amplify: Enterprise hosting on Amazon's global network.",
+            "2": "Google Workspace: Pro Email (@yourcompany.com) setup.",
+            "3": "Social: LinkedIn & FB Business Page verification."
+          }
+        }
       },
       "1": {
-        "title": "Unified Communications",
-        "description": "Centralize WhatsApp, SMS, and Email into one self-hosted dashboard. No per-agent fees."
+        "title": "Unified Customer Ops",
+        "description": "Never miss a lead. Consolidate WhatsApp, Email, and Social chats into a single inbox.",
+        "details": {
+          "tagline": "Stop paying per-agent fees.",
+          "problem": "As you scale, support software like Zendesk gets incredibly expensive. We replace that rent with ownership. Your sales and support teams work from one single dashboard.",
+          "result": "The Result: Whether a customer emails you, WhatsApps you, or DMs you, it lands in one place. You can add 50 staff members without your monthly bill increasing by a single cent.",
+          "tech_title": "The Technical Engine",
+          "tech_list": {
+            "0": "Chatwoot: Open-source omnichannel suite on your server.",
+            "1": "VoIP & IVR: Digital phone menu routed to staff laptops.",
+            "2": "Meta API: Official direct connection to WhatsApp Business.",
+            "3": "Privacy: Hosted on your private AWS Lightsail instance, not a shared SaaS database."
+          }
+        }
       },
       "2": {
-        "title": "Cloud Automation",
-        "description": "Replace manual data entry with n8n workflows. Sync your website, CRM, and logistics databases automatically."
+        "title": "Operational Automation",
+        "description": "Eliminate human error. Connect your website directly to your logistics and CRM systems.",
+        "details": {
+          "tagline": "Put your busywork on Autopilot.",
+          "problem": "Your highest-paid employees shouldn't be copy-pasting data into spreadsheets. We build invisible robots that do that for you.",
+          "result": "The Result: When a sale happens, the invoice is generated, logistics notified, and CRM updated—automatically. This eliminates human error and lets your team focus on strategy.",
+          "tech_title": "The Technical Engine",
+          "tech_list": {
+            "0": "Chatwoot: Open-source omnichannel suite on your server.",
+            "1": "VoIP & IVR: Digital phone menu routed to staff laptops.",
+            "2": "Meta API: Official direct connection to WhatsApp Business.",
+            "3": "Privacy: Data lives on YOUR Private Cloud, not a shared SaaS database."
+          }
+        }
       }
     }
   },

@@ -6,12 +6,12 @@
     "contact": "Contacto"
   },
   "Hero": {
-    "badge": "Trexx Enterprise v2.0",
-    "title": "Construimos Soberanía Digital",
-    "description": "Deja de alquilar tu infraestructura. Construimos ecosistemas nativos en la nube y auto-alojados usando Next.js, AWS y Automatización.",
+    "badge": "Arquitectura Empresarial v2.0",
+    "title": "Deja de Alquilar Tu Tecnología.",
+    "description": "Reemplazamos las costosas suscripciones mensuales SaaS por plataformas de alto rendimiento y auto-alojadas que son 100% tuyas. Menos costes, más velocidad y control total.",
     "actions": {
-      "projects": "Ver Arquitectura",
-      "contact": "Contáctanos"
+      "projects": "Ver Casos de Éxito",
+      "contact": "Empieza tu Construcción"
     }
   },
   "Footer": {
@@ -28,8 +28,8 @@
     "description": "No solo hacemos webs. Construimos motores digitales independientes.",
     "mission": {
       "title": "Soberanía de Datos",
-      "text": "Nuestra misión es alejar a las empresas de las costosas plataformas SaaS compartidas hacia una infraestructura potente y auto-alojada que realmente poseen.",
-      "detail": "Al aprovechar tecnologías de código abierto como Chatwoot y Baserow en su propia Nube Privada AWS, eliminamos las tarifas de licencia por agente y aseguramos que sus datos nunca salgan de su control."
+      "text": "Nuestra misión es alejar a las empresas de las costosas plataformas SaaS compartidas hacia una infraestructura potente y auto-alojada que realmente posees.",
+      "detail": "Al aprovechar tecnologías de código abierto como Chatwoot y Baserow en tu propia Nube Privada AWS, eliminamos las tarifas de licencia por agente y aseguramos que tus datos nunca salgan de tu control."
     },
     "stats": {
       "clients": "Despliegues",
@@ -38,11 +38,11 @@
     }
   },
   "ServicesPage": {
-    "title": "Nuestra Arquitectura",
-    "description": "Un ecosistema full-stack diseñado para escalabilidad.",
+    "title": "Infraestructura Digital",
+    "description": "Construimos los motores que impulsan empresas de alto crecimiento. Rápidos, seguros y totalmente de tu propiedad.",
     "cta": {
-      "title": "¿Listo para ser dueño de sus datos?",
-      "text": "Construyamos su nube privada hoy.",
+      "title": "¿Listo para ser dueño de tus datos?",
+      "text": "Construyamos tu nube privada hoy.",
       "button": "Empezar Transformación"
     }
   },
@@ -80,20 +80,56 @@
     }
   },
   "Services": {
-    "title": "Nuestra Arquitectura",
-    "description": "Un ecosistema full-stack diseñado para escalabilidad y seguridad.",
+    "title": "Nuestras Soluciones",
+    "description": "Infraestructura de grado empresarial diseñada para aumentar ingresos y reducir costes operativos.",
     "items": {
       "0": {
-        "title": "Ecosistemas Digitales",
-        "description": "Arquitectura Next.js en AWS Amplify. Cargas sub-segundo y seguridad de Superficie de Ataque Cero."
+        "title": "Plataformas de Alto Rendimiento",
+        "description": "Deja de perder clientes por webs lentas. Construimos plataformas que cargan al instante.",
+        "details": {
+          "tagline": "Convierte tu web en tu mejor vendedor.",
+          "problem": "La mayoría de webs son folletos digitales. Nosotros construimos máquinas de conversión. Al migrar de WordPress a infraestructura a medida, aseguramos carga instantánea.",
+          "result": "El Resultado: Google te posiciona mejor (SEO), los clientes no se van por esperas y la confianza en tu marca se dispara. Además, gestionamos la configuración: dominios, emails y redes.",
+          "tech_title": "El Motor Técnico",
+          "tech_list": {
+            "0": "Next.js: Cargas sub-segundo y Superficie de Ataque Cero.",
+            "1": "AWS Amplify: Hosting empresarial en la red global de Amazon.",
+            "2": "Google Workspace: Configuración de Email Pro (@tuempresa).",
+            "3": "Social: Verificación de páginas de LinkedIn y Facebook."
+          }
+        }
       },
       "1": {
-        "title": "Comunicaciones Unificadas",
-        "description": "Centraliza WhatsApp, SMS y Email en un panel auto-alojado. Sin tarifas por agente."
+        "title": "Operaciones Unificadas",
+        "description": "No pierdas ni un lead. Consolida WhatsApp, Email y Redes en una sola bandeja.",
+        "details": {
+          "tagline": "Deja de pagar tarifas por agente.",
+          "problem": "Al escalar, el software de soporte (como Zendesk) se vuelve carísimo. Reemplazamos ese alquiler por propiedad. Tus equipos de ventas y soporte trabajan desde un solo panel.",
+          "result": "El Resultado: Ya sea por Email, WhatsApp o Instagram, todo llega al mismo lugar. Puedes añadir 50 empleados sin que tu factura mensual suba ni un céntimo.",
+          "tech_title": "El Motor Técnico",
+          "tech_list": {
+            "0": "Chatwoot: Suite omnicanal Open-source en tu servidor.",
+            "1": "VoIP & IVR: Menú telefónico digital enrutado a portátiles.",
+            "2": "Meta API: Conexión oficial directa a WhatsApp Business.",
+            "3": "Privacidad: Alojado en tu instancia privada de AWS Lightsail, no en una base de datos SaaS."
+          }
+        }
       },
       "2": {
-        "title": "Automatización Cloud",
-        "description": "Reemplaza la entrada manual de datos con flujos n8n. Sincroniza tu web, CRM y logística automáticamente."
+        "title": "Automatización Operativa",
+        "description": "Elimina el error humano. Conecta tu web directamente con tu logística y CRM.",
+        "details": {
+          "tagline": "Pon el trabajo manual en Piloto Automático.",
+          "problem": "Tus empleados mejor pagados no deberían copiar y pegar datos en Excel. Construimos robots invisibles que lo hacen por ti.",
+          "result": "El Resultado: Cuando ocurre una venta, se genera la factura, se avisa a logística y se actualiza el CRM—automáticamente. Elimina errores y deja que tu equipo se enfoque en estrategia.",
+          "tech_title": "El Motor Técnico",
+          "tech_list": {
+            "0": "Chatwoot: Suite omnicanal Open-source en tu servidor.",
+            "1": "VoIP & IVR: Menú telefónico digital enrutado a portátiles.",
+            "2": "Meta API: Conexión oficial directa a WhatsApp Business.",
+            "3": "Privacidad: Datos en TU Nube Privada, no en bases de datos compartidas."
+          }
+        }
       }
     }
   },

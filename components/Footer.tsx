@@ -3,7 +3,7 @@
 import { useTranslations } from "next-intl";
 import { siteConfig } from "@/config/site";
 import { Link } from "@/i18n/routing";
-import { Linkedin, Facebook } from "lucide-react"; // 👈 New Icons
+import { Linkedin, Facebook } from "lucide-react";
 
 export function Footer() {
   const t = useTranslations("Footer");
@@ -11,6 +11,7 @@ export function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
+    /* 1. FOOTER WRAPPER */
     <footer 
       className={`
         border-t 
@@ -21,8 +22,17 @@ export function Footer() {
         mt-auto
       `}
     >
-      <div className="container mx-auto px-4">
+      {/* 2. CENTERED CONTAINER (With Width Constraint) */}
+      <div 
+        className={`
+          container 
+          mx-auto 
+          px-4
+          max-w-7xl   /* 👈 THE FIX: Aligning with Navbar width */
+        `}
+      >
         
+        {/* 3. MAIN CONTENT GRID */}
         <div 
           className={`
             grid 
@@ -32,7 +42,7 @@ export function Footer() {
             mb-12
           `}
         >
-          {/* Brand */}
+          {/* 4. LEFT COLUMN: BRAND & SOCIALS */}
           <div className="col-span-1 md:col-span-2">
             <span 
               className={`
@@ -55,17 +65,13 @@ export function Footer() {
               {t("brand_description")}
             </p>
             
-            {/* 👇 SOCIAL ICONS (LinkedIn / Facebook) */}
+            {/* Social Icons */}
             <div className="flex gap-4 mt-6">
               <a 
                 href={siteConfig.links.linkedin} 
                 target="_blank" 
                 rel="noreferrer" 
-                className={`
-                  text-black
-                  hover:text-slate-500 
-                  transition-colors
-                `}
+                className="text-black hover:text-slate-500 transition-colors"
               >
                 <Linkedin size={20} />
               </a>
@@ -73,26 +79,16 @@ export function Footer() {
                 href={siteConfig.links.facebook} 
                 target="_blank" 
                 rel="noreferrer" 
-                className={`
-                  text-black
-                  hover:text-slate-500 
-                  transition-colors
-                `}
+                className="text-black hover:text-slate-500 transition-colors"
               >
                 <Facebook size={20} />
               </a>
             </div>
           </div>
 
-          {/* Navigation */}
+          {/* 5. MIDDLE COLUMN: NAVIGATION LINKS */}
           <div>
-            <h3 
-              className={`
-                font-semibold 
-                text-black 
-                mb-4
-              `}
-            >
+            <h3 className="font-semibold text-black mb-4">
               {t("about")}
             </h3>
             <ul className="space-y-3 text-sm">
@@ -100,11 +96,7 @@ export function Footer() {
                 <li key={item.href}>
                   <Link 
                     href={item.href} 
-                    className={`
-                      text-black 
-                      hover:text-slate-500 
-                      transition-colors
-                    `}
+                    className="text-black hover:text-slate-500 transition-colors"
                   >
                     {tNav(item.label)}
                   </Link>
@@ -113,26 +105,16 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Legal */}
+          {/* 6. RIGHT COLUMN: LEGAL LINKS */}
           <div>
-            <h3 
-              className={`
-                font-semibold 
-                text-black 
-                mb-4
-              `}
-            >
+            <h3 className="font-semibold text-black mb-4">
               Legal
             </h3>
             <ul className="space-y-3 text-sm">
               <li>
                 <Link 
                   href="#" 
-                  className={`
-                    text-black 
-                    hover:text-slate-500 
-                    transition-colors
-                  `}
+                  className="text-black hover:text-slate-500 transition-colors"
                 >
                   {t("legal.privacy")}
                 </Link>
@@ -140,11 +122,7 @@ export function Footer() {
               <li>
                 <Link 
                   href="#" 
-                  className={`
-                    text-black 
-                    hover:text-slate-500 
-                    transition-colors
-                  `}
+                  className="text-black hover:text-slate-500 transition-colors"
                 >
                   {t("legal.terms")}
                 </Link>
@@ -153,6 +131,7 @@ export function Footer() {
           </div>
         </div>
 
+        {/* 7. BOTTOM BAR: COPYRIGHT */}
         <div 
           className={`
             border-t 
