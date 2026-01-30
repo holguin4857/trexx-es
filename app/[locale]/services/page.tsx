@@ -1,11 +1,12 @@
 import { useTranslations } from "next-intl";
 import { PageHeader } from "@/components/PageHeader";
 import { Services } from "@/components/Services";
-import { ServicesCTA } from "@/components/ServicesCTA"; // 👈 Your new Dark CTA
+import { Pricing } from "@/components/Pricing"; // 👈 New Import
+import { ServicesCTA } from "@/components/ServicesCTA";
 
 export const metadata = {
   title: "Services | Trexx Digital",
-  description: "Explore our digital services.",
+  description: "Enterprise infrastructure solutions.",
 };
 
 export default function ServicesPage() {
@@ -13,17 +14,19 @@ export default function ServicesPage() {
 
   return (
     <div className="flex flex-col">
-      {/* 1. Header Block (Top of page) */}
+      {/* 1. Header: "Digital Infrastructure" */}
       <PageHeader 
         title={t("title")} 
         description={t("description")} 
       />
 
-      {/* 2. The Services Grid (Middle of page) */}
-      {/* Note: The Services component has its own internal padding/container */}
+      {/* 2. The Solution: Grid + Deep Dive Details */}
       <Services />
 
-      {/* 3. The Call to Action (Bottom of page) */}
+      {/* 3. The Investment: Pricing Plans */}
+      <Pricing />
+
+      {/* 4. The Action: "Start Transformation" */}
       <ServicesCTA />
     </div>
   );

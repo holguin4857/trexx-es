@@ -6,7 +6,7 @@
     "contact": "Contacto"
   },
   "Hero": {
-    "badge": "Arquitectura Empresarial v2.0",
+    "badge": "Arquitectura Digital v2.0",
     "title": "Deja de Alquilar Tu Tecnología.",
     "description": "Reemplazamos las costosas suscripciones mensuales SaaS por plataformas de alto rendimiento y auto-alojadas que son 100% tuyas. Menos costes, más velocidad y control total.",
     "actions": {
@@ -84,12 +84,12 @@
     "description": "Infraestructura de grado empresarial diseñada para aumentar ingresos y reducir costes operativos.",
     "items": {
       "0": {
-        "title": "Plataformas de Alto Rendimiento",
-        "description": "Deja de perder clientes por webs lentas. Construimos plataformas que cargan al instante.",
+        "title": "Núcleo Digital",
+        "description": "Plataformas de Alto Rendimiento. Deja de perder clientes por webs lentas.",
         "details": {
           "tagline": "Convierte tu web en tu mejor vendedor.",
           "problem": "La mayoría de webs son folletos digitales. Nosotros construimos máquinas de conversión. Al migrar de WordPress a infraestructura a medida, aseguramos carga instantánea.",
-          "result": "El Resultado: Google te posiciona mejor (SEO), los clientes no se van por esperas y la confianza en tu marca se dispara. Además, gestionamos la configuración: dominios, emails y redes.",
+          "result": "El Resultado: Google te posiciona mejor (SEO), los clientes no se van por esperas y la confianza en tu marca se dispara.",
           "tech_title": "El Motor Técnico",
           "tech_list": {
             "0": "Next.js: Cargas sub-segundo y Superficie de Ataque Cero.",
@@ -100,71 +100,76 @@
         }
       },
       "1": {
-        "title": "Operaciones Unificadas",
-        "description": "No pierdas ni un lead. Consolida WhatsApp, Email y Redes en una sola bandeja.",
+        "title": "Motor de Crecimiento",
+        "description": "Operaciones Unificadas. No pierdas ni un lead.",
         "details": {
           "tagline": "Deja de pagar tarifas por agente.",
           "problem": "Al escalar, el software de soporte (como Zendesk) se vuelve carísimo. Reemplazamos ese alquiler por propiedad. Tus equipos de ventas y soporte trabajan desde un solo panel.",
-          "result": "El Resultado: Ya sea por Email, WhatsApp o Instagram, todo llega al mismo lugar. Puedes añadir 50 empleados sin que tu factura mensual suba ni un céntimo.",
+          "result": "El Resultado: Ya sea por Email, WhatsApp o Instagram, todo llega al mismo lugar. Puedes añadir 50 empleados sin que tu factura mensual suba.",
           "tech_title": "El Motor Técnico",
           "tech_list": {
             "0": "Chatwoot: Suite omnicanal Open-source en tu servidor.",
             "1": "VoIP & IVR: Menú telefónico digital enrutado a portátiles.",
             "2": "Meta API: Conexión oficial directa a WhatsApp Business.",
-            "3": "Privacidad: Alojado en tu instancia privada de AWS Lightsail, no en una base de datos SaaS."
+            "3": "Privacidad: Alojado en tu instancia privada de AWS Lightsail."
           }
         }
       },
       "2": {
-        "title": "Automatización Operativa",
-        "description": "Elimina el error humano. Conecta tu web directamente con tu logística y CRM.",
+        "title": "Nube Empresarial",
+        "description": "Automatización Operativa. Pon el trabajo manual en Piloto Automático.",
         "details": {
-          "tagline": "Pon el trabajo manual en Piloto Automático.",
+          "tagline": "Elimina el error humano.",
           "problem": "Tus empleados mejor pagados no deberían copiar y pegar datos en Excel. Construimos robots invisibles que lo hacen por ti.",
-          "result": "El Resultado: Cuando ocurre una venta, se genera la factura, se avisa a logística y se actualiza el CRM—automáticamente. Elimina errores y deja que tu equipo se enfoque en estrategia.",
+          "result": "El Resultado: Cuando ocurre una venta, se genera la factura, se avisa a logística y se actualiza el CRM—automáticamente. Esto elimina el error humano.",
           "tech_title": "El Motor Técnico",
           "tech_list": {
-            "0": "Chatwoot: Suite omnicanal Open-source en tu servidor.",
-            "1": "VoIP & IVR: Menú telefónico digital enrutado a portátiles.",
-            "2": "Meta API: Conexión oficial directa a WhatsApp Business.",
-            "3": "Privacidad: Datos en TU Nube Privada, no en bases de datos compartidas."
+            "0": "n8n: Motor de flujos conectando Stripe, Slack y SQL.",
+            "1": "Baserow: Base de datos escalable de tu propiedad.",
+            "2": "Webhooks: Sincronización de datos en tiempo real.",
+            "3": "Auto-PDF: Generación programática de facturas."
           }
         }
       }
     }
   },
   "Pricing": {
-    "title": "Precios de Infraestructura",
-    "subtitle": "Tarifa única de construcción. Eres dueño del código. Eres dueño de los datos.",
+    "title": "Inversión Transparente",
+    "subtitle": "Tarifa única de construcción. Eres dueño del código. Eres dueño de los datos. Sin alquiler mensual.",
     "button": "Seleccionar Arquitectura",
     "popular": "Mejor Valor",
     "plans": {
       "starter": {
         "name": "Núcleo Digital",
+        "price": "3.500 €",
+        "description": "Perfecto para marcas en crecimiento que necesitan una base rápida y segura.",
         "features": {
-          "0": "Frontend Next.js (React)",
-          "1": "CMS Headless (Frontmatter)",
-          "2": "Hosting AWS Amplify",
-          "3": "Red Global Edge (CDN)"
+          "0": "Web de Alto Rendimiento Next.js",
+          "1": "Hosting Global AWS Amplify",
+          "2": "Configuración Google Workspace y Dominio",
+          "3": "SEO Básico y Analítica"
         }
       },
       "business": {
         "name": "Motor de Crecimiento",
+        "price": "6.500 €",
+        "description": "El stack operativo completo. Soporte, Ventas y Web combinados.",
         "features": {
-          "0": "Todo en Núcleo",
-          "1": "Bandeja Unificada (Chatwoot)",
-          "2": "API de WhatsApp y SMS",
-          "3": "VoIP y Enrutamiento IVR"
+          "0": "Todo en Núcleo Digital",
+          "1": "Bandeja Unificada Chatwoot",
+          "2": "Conexión API WhatsApp Business",
+          "3": "Configuración Telefonía VoIP"
         }
       },
       "enterprise": {
         "name": "Nube Empresarial",
-        "price": "A medida",
+        "price": "A Medida",
+        "description": "Para empresas de logística que necesitan sincronización de datos compleja.",
         "features": {
-          "0": "Nube Privada (AWS Lightsail)",
-          "1": "Automatización de Flujos (n8n)",
-          "2": "Base de Datos (Baserow/SQL)",
-          "3": "Soberanía Total de Datos"
+          "0": "Todo en Motor de Crecimiento",
+          "1": "Servidor Privado AWS Lightsail",
+          "2": "Automatización de Flujos n8n",
+          "3": "Base de Datos Logística Baserow"
         }
       }
     }

@@ -6,7 +6,7 @@
     "contact": "Contact"
   },
   "Hero": {
-    "badge": "Enterprise Architecture v2.0",
+    "badge": "Digital Architecture v2.0",
     "title": "Stop Renting Your Technology.",
     "description": "We replace expensive monthly SaaS subscriptions with high-performance, self-hosted platforms that you own 100%. Lower costs, faster speeds, and total control.",
     "actions": {
@@ -84,12 +84,12 @@
     "description": "Enterprise-grade infrastructure designed to increase revenue and reduce operational costs.",
     "items": {
       "0": {
-        "title": "High-Performance Platforms",
-        "description": "Stop losing customers to slow websites. We build enterprise-grade platforms that load instantly.",
+        "title": "Digital Core",
+        "description": "High-Performance Platforms. Stop losing customers to slow websites.",
         "details": {
           "tagline": "Turn your website into your best salesperson.",
           "problem": "Most websites are just digital brochures. We build conversion machines. By moving away from slow WordPress themes to custom infrastructure, we ensure your site loads instantly.",
-          "result": "The Result: Google ranks you higher (SEO), customers don't bounce due to load times, and your brand trust skyrockets. Plus, we handle the boring setup—domains, emails, and social accounts.",
+          "result": "The Result: Google ranks you higher (SEO), customers don't bounce due to load times, and your brand trust skyrockets.",
           "tech_title": "The Technical Engine",
           "tech_list": {
             "0": "Next.js: Sub-second page loads & Zero-Attack Surface.",
@@ -100,71 +100,76 @@
         }
       },
       "1": {
-        "title": "Unified Customer Ops",
-        "description": "Never miss a lead. Consolidate WhatsApp, Email, and Social chats into a single inbox.",
+        "title": "Growth Engine",
+        "description": "Unified Customer Ops. Never miss a lead again.",
         "details": {
           "tagline": "Stop paying per-agent fees.",
           "problem": "As you scale, support software like Zendesk gets incredibly expensive. We replace that rent with ownership. Your sales and support teams work from one single dashboard.",
-          "result": "The Result: Whether a customer emails you, WhatsApps you, or DMs you, it lands in one place. You can add 50 staff members without your monthly bill increasing by a single cent.",
+          "result": "The Result: Whether a customer emails you, WhatsApps you, or DMs you, it lands in one place. You can add 50 staff members without your monthly bill increasing.",
           "tech_title": "The Technical Engine",
           "tech_list": {
             "0": "Chatwoot: Open-source omnichannel suite on your server.",
             "1": "VoIP & IVR: Digital phone menu routed to staff laptops.",
             "2": "Meta API: Official direct connection to WhatsApp Business.",
-            "3": "Privacy: Hosted on your private AWS Lightsail instance, not a shared SaaS database."
+            "3": "Privacy: Hosted on your private AWS Lightsail instance."
           }
         }
       },
       "2": {
-        "title": "Operational Automation",
-        "description": "Eliminate human error. Connect your website directly to your logistics and CRM systems.",
+        "title": "Enterprise Cloud",
+        "description": "Operational Automation. Put your busywork on Autopilot.",
         "details": {
-          "tagline": "Put your busywork on Autopilot.",
+          "tagline": "Eliminate human error.",
           "problem": "Your highest-paid employees shouldn't be copy-pasting data into spreadsheets. We build invisible robots that do that for you.",
-          "result": "The Result: When a sale happens, the invoice is generated, logistics notified, and CRM updated—automatically. This eliminates human error and lets your team focus on strategy.",
+          "result": "The Result: When a sale happens, the invoice is generated, logistics notified, and CRM updated—automatically. This eliminates human error.",
           "tech_title": "The Technical Engine",
           "tech_list": {
-            "0": "Chatwoot: Open-source omnichannel suite on your server.",
-            "1": "VoIP & IVR: Digital phone menu routed to staff laptops.",
-            "2": "Meta API: Official direct connection to WhatsApp Business.",
-            "3": "Privacy: Data lives on YOUR Private Cloud, not a shared SaaS database."
+            "0": "n8n: Workflow engine connecting Stripe, Slack, & SQL.",
+            "1": "Baserow: A scalable, no-code database you own.",
+            "2": "Webhooks: Real-time data syncing between apps.",
+            "3": "Auto-PDF: Programmatic invoice generation."
           }
         }
       }
     }
   },
   "Pricing": {
-    "title": "Infrastructure Pricing",
-    "subtitle": "One-time build fees. You own the code. You own the data.",
+    "title": "Transparent Investment",
+    "subtitle": "One-time build fees. You own the code. You own the data. No monthly rent.",
     "button": "Select Architecture",
-    "popular": "Best Value",
+    "popular": "Most Popular",
     "plans": {
       "starter": {
         "name": "Digital Core",
+        "price": "€3,500",
+        "description": "Perfect for high-growth brands needing a fast, secure foundation.",
         "features": {
-          "0": "Next.js Frontend (React)",
-          "1": "Headless CMS (Frontmatter)",
-          "2": "AWS Amplify Hosting",
-          "3": "Global Edge Network (CDN)"
+          "0": "Next.js High-Performance Website",
+          "1": "AWS Amplify Global Hosting",
+          "2": "Google Workspace & Domain Setup",
+          "3": "Basic SEO & Analytics"
         }
       },
       "business": {
         "name": "Growth Engine",
+        "price": "€6,500",
+        "description": "The complete operational stack. Support, Sales, and Web combined.",
         "features": {
-          "0": "Everything in Core",
-          "1": "Unified Inbox (Chatwoot)",
-          "2": "WhatsApp & SMS API Setup",
-          "3": "VoIP & IVR Routing"
+          "0": "Everything in Platform Core",
+          "1": "Chatwoot Unified Inbox Setup",
+          "2": "WhatsApp Business API Connection",
+          "3": "VoIP Phone System Configuration"
         }
       },
       "enterprise": {
         "name": "Enterprise Cloud",
         "price": "Custom",
+        "description": "For logistics-heavy companies needing complex data sync.",
         "features": {
-          "0": "Private Cloud (AWS Lightsail)",
-          "1": "n8n Workflow Automation",
-          "2": "Database (Baserow/SQL)",
-          "3": "Full Data Sovereignty"
+          "0": "Everything in Unified Ops",
+          "1": "AWS Lightsail Private Server",
+          "2": "n8n Workflow Automation",
+          "3": "Baserow Logistics Database"
         }
       }
     }
