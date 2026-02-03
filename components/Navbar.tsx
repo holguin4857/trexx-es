@@ -1,10 +1,12 @@
 "use client";
 
+/* 1. IMPORTS */
 import { useLocale, useTranslations } from "next-intl";
 import { Link, usePathname, useRouter } from "@/i18n/routing";
 import { siteConfig } from "@/config/site";
 import { Menu, X, Globe } from "lucide-react";
 import { useState } from "react";
+import Image from "next/image"; // 👈 Added for the logo
 
 export function Navbar() {
   const t = useTranslations("Nav");
@@ -18,6 +20,7 @@ export function Navbar() {
   };
 
   return (
+    /* 2. MAIN HEADER WRAPPER */
     <header 
       className={`
         sticky 
@@ -35,23 +38,18 @@ export function Navbar() {
         className={`
           container 
           mx-auto 
-          
-          /* 👇 THE FIX: Constrain width strictly */
-          max-w-7xl 
-          
+          max-w-7xl  /* Width Constraint */
           flex 
           items-center 
           justify-between 
           px-4
-          
-          /* RESPONSIVE HEIGHT */
           h-16 
-          xl:h-24
+          xl:h-24    /* Responsive Height */
           transition-all
         `}
       >
         
-        {/* BRAND LOGO */}
+        {/* 3. BRAND LOGO SECTION */}
         <div 
           className={`
             flex 
@@ -60,31 +58,30 @@ export function Navbar() {
             font-extrabold 
             tracking-tight 
             text-black 
-            
-            /* RESPONSIVE LOGO TEXT */
             text-xl 
             xl:text-3xl
           `}
         >
-          <div 
-            className={`
-              bg-black 
-              rounded-md
-              h-6 w-6 
-              xl:h-8 xl:w-8
-            `} 
-          />
+          {/* 👇 THE LOGO IMAGE FIX */}
+          <div className="relative h-6 w-6 xl:h-8 xl:w-8">
+            <Image 
+              src="/logo.svg" 
+              alt="Trexx Logo" 
+              fill 
+              className="object-contain"
+              priority // Loads instantly
+            />
+          </div>
+          
           <Link href="/">{siteConfig.name}</Link>
         </div>
 
-        {/* DESKTOP NAV */}
+        {/* 4. DESKTOP NAVIGATION SECTION */}
         <nav 
           className={`
             hidden 
             md:flex 
             items-center 
-            
-            /* RESPONSIVE GAP */
             gap-1 
             xl:gap-2
           `}
@@ -97,23 +94,13 @@ export function Navbar() {
                 font-medium 
                 rounded-full 
                 transition-all 
-                
-                /* RESPONSIVE TEXT SIZE */
                 text-base 
                 xl:text-xl
-                
-                /* RESPONSIVE PADDING */
                 px-4 py-2 
                 xl:px-6 xl:py-3
-
-                /* Colors */
                 text-black
-                
-                /* Hover State */
                 hover:bg-slate-100 
                 hover:text-slate-500
-
-                /* Active State */
                 ${pathname === item.href 
                   ? "bg-slate-100 text-slate-900" 
                   : ""
@@ -125,10 +112,10 @@ export function Navbar() {
           ))}
         </nav>
 
-        {/* LANGUAGE & MOBILE TOGGLE */}
+        {/* 5. RIGHT SIDE ACTIONS (Language & Mobile Toggle) */}
         <div className="flex items-center gap-4">
           
-          {/* THE MODERN LANGUAGE PILL */}
+          {/* Language Switcher */}
           <button
             onClick={() => onLanguageChange(locale === "en" ? "es" : "en")}
             className={`
@@ -140,24 +127,19 @@ export function Navbar() {
               rounded-full
               transition-all
               shadow-sm
-
-              /* COLORS */
               bg-black 
               text-white
               hover:bg-slate-800 
               hover:scale-105
-
-              /* RESPONSIVE SIZING */
               text-xs px-4 py-2 
               xl:text-sm xl:px-6 xl:py-3
             `}
           >
             <Globe className="h-4 w-4 xl:h-4 xl:w-4" />
-            
-            {/* Logic: Show OTHER language */}
             <span>{locale === 'en' ? 'Español' : 'English'}</span>
           </button>
 
+          {/* Mobile Menu Toggle Button */}
           <button 
             className="md:hidden text-black" 
             onClick={() => setIsOpen(!isOpen)}
@@ -167,7 +149,7 @@ export function Navbar() {
         </div>
       </div>
 
-      {/* MOBILE MENU */}
+      {/* 6. MOBILE MENU DROPDOWN */}
       {isOpen && (
         <div className="md:hidden border-t border-slate-100 bg-white p-4">
           <nav className="flex flex-col space-y-2">
