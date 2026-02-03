@@ -29,7 +29,7 @@ export function ContactInfo() {
           </div>
           <div>
             <h3 className="font-bold text-lg text-black mb-1">{t("info.email")}</h3>
-            <p className="text-slate-600 font-medium">hello@trexx.digital</p>
+            <p className="text-slate-600 font-medium">hello@trexx.es</p>
           </div>
         </div>
 
@@ -40,7 +40,7 @@ export function ContactInfo() {
           </div>
           <div>
             <h3 className="font-bold text-lg text-black mb-1">{t("info.phone")}</h3>
-            <p className="text-slate-600 font-medium">+34 900 123 456</p>
+            <p className="text-slate-600 font-medium">+34 961 336 135</p>
           </div>
         </div>
 
