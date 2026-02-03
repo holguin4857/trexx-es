@@ -29,7 +29,7 @@ export function ContactInfo() {
           </div>
           <div>
             <h3 className="font-bold text-lg text-black mb-1">{t("info.email")}</h3>
-            <p className="text-slate-600 font-medium">hello@trexx.es</p>
+            <p className="text-slate-600 font-medium">info@trexx.es</p>
           </div>
         </div>
 
