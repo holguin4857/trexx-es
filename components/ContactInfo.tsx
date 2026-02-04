@@ -2,14 +2,13 @@
 
 import { useTranslations } from "next-intl";
 import { Mail, MapPin, Phone } from "lucide-react";
+import { siteConfig } from "@/config/site"; 
 
 export function ContactInfo() {
   const t = useTranslations("ContactPage");
 
   return (
     <div className="space-y-10">
-      
-      {/* Header Text */}
       <div>
         <h2 className="text-3xl font-extrabold tracking-tight text-black mb-4">
           {t("title")}
@@ -19,9 +18,7 @@ export function ContactInfo() {
         </p>
       </div>
       
-      {/* Contact Details */}
       <div className="space-y-6">
-        
         {/* Email */}
         <div className="flex items-start gap-5">
           <div className="p-4 bg-slate-100 text-black rounded-2xl flex-shrink-0">
@@ -29,7 +26,7 @@ export function ContactInfo() {
           </div>
           <div>
             <h3 className="font-bold text-lg text-black mb-1">{t("info.email")}</h3>
-            <p className="text-slate-600 font-medium">info@trexx.es</p>
+            <p className="text-slate-600 font-medium">{siteConfig.email}</p> 
           </div>
         </div>
 
@@ -40,7 +37,7 @@ export function ContactInfo() {
           </div>
           <div>
             <h3 className="font-bold text-lg text-black mb-1">{t("info.phone")}</h3>
-            <p className="text-slate-600 font-medium">+34 961 336 135</p>
+            <p className="text-slate-600 font-medium">{siteConfig.phone}</p>
           </div>
         </div>
 
@@ -54,7 +51,6 @@ export function ContactInfo() {
             <p className="text-slate-600 font-medium">{t("info.address")}</p>
           </div>
         </div>
-
       </div>
     </div>
   );
